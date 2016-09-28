@@ -1,0 +1,41 @@
+.fixed_height_320 {
+  height: 320px;
+}
+.fixed_height_390 {
+  height: 390px;
+}
+.fixed_height_200 {
+  height: 200px;
+}
+.overflow_hidden {
+  overflow: hidden
+}
+
+.center-margin {
+  margin: 0 auto;
+  float: none!important;
+}
+
+.line_30 {
+  line-height: 30px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.hr-or {
+	position: relative;
+	width: 80%;
+	margin: 2.5em auto;
+
+	&:before {
+		content: "OR";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		padding: 0 20px;
+		background: $white-base;
+		transform: translate(-50%, -50%);
+	}
+}

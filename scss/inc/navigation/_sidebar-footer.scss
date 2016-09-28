@@ -1,0 +1,24 @@
+.sidebar-footer {
+  position: fixed;
+  bottom: 0px;
+  display: block;
+  width: 230px;
+  clear: both;
+  padding: 0;
+  background: darken($sidebar-main, 5);
+
+  a {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 7px 0;
+    font-size: 17px;
+    color: $white-d20;
+    text-align: center;
+    background: transparent;
+
+    &:hover {
+      background: darken($sidebar-main, 10);
+    }
+  }
+}

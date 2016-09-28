@@ -1,0 +1,58 @@
+//  Nav Title - Container
+.nav_title {
+  float: left;
+  width: 230px;
+  height: 57px;
+  background: $sidebar-main;
+  border-radius: 0;
+}
+//  Left Nav on mobile sizes
+.nav-sm .navbar.nav_title {
+  width: 70px;
+
+  a {
+    padding: 0 10px;
+
+    span { display: none; }
+
+    #nxp_logo {
+      width: 100%;
+      max-width: 75px;
+    }
+  }
+}
+
+// site title
+.site_title {
+  display: block;
+  width: 100%;
+  height: 55px;
+  padding-left: 10px;
+  margin: 0;
+  margin-left: 0 !important;
+  font: {
+//    size: 22px;
+    size: 1.5em;
+    weight: 400;
+  }
+  color: #ECF0F1 !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 59px;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  i {
+    border: 1px solid #EAEAEA;
+    padding: 5px 6px;
+    border-radius: 50%;
+  }
+}
+
+//  Company Logo
+#nxp_logo {
+  width: 75px;
+  height: auto;
+}
