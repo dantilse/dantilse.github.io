@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixins";
 
+/* start _normalize.scss */
+@import "inc/normalize";
+/* end _normalize.scss */
+
 /* start _navigation.scss */
 @import "inc/navigation";
 /* end _navigation.scss */
@@ -16,6 +20,10 @@
 /* start _typography.scss */
 @import "inc/typography";
 /* end _typography.scss */
+
+/* start _buttons.scss */
+@import "inc/buttons";
+/* end _buttons.scss */
 
 /* start _helper-classes.scss */
 @import "inc/helper-classes";
@@ -126,7 +134,7 @@
 /* start _wysiwyg */
 @import "inc/wysiwyg";
 /* end _wysiwyg */
- 
+
 /* start _select2.scss */
 @import "inc/select2";
 /* end _select2.scss */
@@ -134,10 +142,6 @@
 /* start _switchery.scss */
 @import "inc/switchery";
 /* end _switchery.scss */
-
-/* start _normalize.scss */
-@import "inc/normalize";
-/* end _normalize.scss */
 
 /* start _cropper.scss */
 @import "inc/cropper";
@@ -166,3 +170,7 @@
 /* start _dropzone.scss */
 @import "inc/dropzone";
 /* end _dropzone.scss */
+
+/* start _third-party.scss */
+@import "inc/third-party";
+/* start _third-party.scss */

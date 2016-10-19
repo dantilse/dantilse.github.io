@@ -23,6 +23,7 @@ $pageTitle = "Session Example";
         <!-- /top navigation -->
 
         <!-- /page content -->
+        <!-- testing -->
         <div class="right_col" role="main">
           <!-- div class="page-title">
             <div class="title_left">

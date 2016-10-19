@@ -3,8 +3,13 @@
 // ------------------------------------------------------------
 
 // Gentellela Alela Colors
-$dark-blue              : #2a3f54;
-$blue-text              : #73879c;
+$dark-blue                 : #2a3f54;
+$blue-text                 : #73879c;
+$button-success-bkg        : #26B99A;
+$button-success-border     : #169F85;
+$button-dark-bkg           : #4B5F71;
+$button-dark-border        : #364B5F;
+
 
 // ------------------------------------------------------------
 // :: Brand Colors from Mobile Styleguide
@@ -273,6 +278,11 @@ $nxp_deep_orange-d40       : #8d400C;
 $nxp_deep_orange-d50       : #753508;
 $nxp_deep_orange-d80       : #2F1502;
 
+//  Common Names
+$white-base                 : $white-base;
+$black                      : #000000;
+$nxp-orange                 : $nxp_orange-base;
+
 // ------------------------------------------------------------
 // :: Event Tool Colors
 // ------------------------------------------------------------
@@ -295,7 +305,7 @@ $primary-font       : Arial, Helvetica, sans-serif;
 $secondary-font     : "Lato", sans-serif;
 $tertiary-font      : "";
 
-$base-font-size     : 1.6rem; // 16px
+$base-font-size     : 1.4rem; // 16px
 
 // ------------------------------------------------------------
 // :: Breakpoints

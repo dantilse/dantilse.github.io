@@ -1,3 +1,10 @@
+//  ---------------------------------------------------------------------------
+//  ::  Random Stuff
+//  ::  Form Controls
+//  ::  Input Groups
+//  ::  Label Controls
+//  ::
+//  ---------------------------------------------------------------------------
 .editor.btn-toolbar {
   zoom: 1;
   background: #F7F7F7;
@@ -5,9 +12,7 @@
   padding: 3px 0;
   border: 1px solid #EFEFEF;
 }
-.input-group {
-  margin-bottom: 10px;
-}
+
 .ln_solid {
   border-top: 1px solid #e5e5e5;
   color: #ffffff;
@@ -26,50 +31,115 @@ span.section {
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
+//  Form Control
+//  ---------------------------------------------------------------------------
 .form-control {
-  border-radius: 0;
+  border-radius: 4px; //  Set to 4px so it looks consistent across browsers
   width: 100%;
+//  -webkit-appearance: none;
+//  -webkit-border-radius: 0px;
+
+  &:focus {
+    border-color: #CCD0D7;
+    box-shadow: none !important;
+  }
+
+  &-feedback {
+    margin-top: 8px;
+    height: 23px;
+    color: #bbb;
+    line-height: 24px;
+    font-size: 15px;
+
+    &.left {
+      border-right: 1px solid #ccc;
+      left: 13px;
+    }
+
+    &.right {
+      border-left: 1px solid #ccc;
+      right: 13px;
+    }
+  }
+
+  &.has-feedback-left {
+    padding-left: 45px;
+  }
+
+  &.has-feedback-right {
+    padding-right: 45px;
+  }
 }
-.form-horizontal .control-label {
-  padding-top: 8px
-}
-.form-control:focus {
-  border-color: #CCD0D7;
-  box-shadow: none !important;
-}
-legend {
-  font-size: 18px;
-  color: inherit;
-}
-.checkbox {}
-.form-horizontal .form-group {
-  margin-right: 0;
-  margin-left: 0;
-}
-.form-control-feedback {
-  margin-top: 8px;
-  height: 23px;
-  color: #bbb;
-  line-height: 24px;
-  font-size: 15px;
-}
-.form-control-feedback.left {
-  border-right: 1px solid #ccc;
-  left: 13px;
-}
-.form-control-feedback.right {
-  border-left: 1px solid #ccc;
-  right: 13px;
-}
-.form-control.has-feedback-left {
-  padding-left: 45px;
-}
-.form-control.has-feedback-right {
-  padding-right: 45px;
-}
-.form-group {
+
+//  Input Groups
+//  ---------------------------------------------------------------------------
+.input-group {
   margin-bottom: 10px;
 }
+
+//  Control Labels
+//  ---------------------------------------------------------------------------
+.control-label {
+  font: {
+    size: 1.4rem;
+    weight: 300;
+  }
+
+  .form-horizontal & {
+    padding-top: 8px
+  }
+}
+
+//  Form Groups
+//  ---------------------------------------------------------------------------
+.form-group {
+  margin-bottom: 1.6rem;
+
+  .form-horizontal & {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+fieldset {
+//  margin-bottom: 1.6rem;
+}
+
+form .row {
+//  margin-bottom: 1.6rem;
+}
+
+form {
+  font-size: 1.4rem;
+
+  fieldset {
+    margin-bottom: 1.6rem;
+
+    .row {
+//      margin-bottom: 1.4rem;
+    }
+  }
+}
+
+//  Legends & Titles
+//  ---------------------------------------------------------------------------
+legend {
+  padding-bottom: .4rem;
+  margin-bottom: .7rem;
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+.checklist-title-header {
+  padding: .7rem 0 .7rem 2rem;
+  margin: 0 0 .7rem;
+  background: $white-d10;
+}
+
+
+//  Form States
+//  ---------------------------------------------------------------------------
+
 .validate {
   margin-top: 10px;
 }
@@ -200,73 +270,7 @@ input.parsley-error, textarea.parsley-error, select.parsley-error {
 }
 /* ***** /autocomplete *****/
 
-/* ***** buttons ********/
-.btn {
-  border-radius: 3px;
-}
-a.btn-success, a.btn-primary, a.btn-warning, a.btn-danger {
-  color: #fff;
-}
-.btn-success {
-  background: #26B99A;
-  border: 1px solid #169F85;
-}
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-  background: #169F85;
-}
-.btn-dark {
-  color: #E9EDEF;
-  background-color: #4B5F71;
-  border-color: #364B5F;
-}
-.btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open .dropdown-toggle.btn-dark {
-  color: #FFFFFF;
-  background-color: #394D5F;
-  border-color: #394D5F;
-}
-.btn-round {
-  border-radius: 30px;
-}
-.btn.btn-app {
-  position: relative;
-  padding: 15px 5px;
-  margin: 0 0 10px 10px;
-  min-width: 80px;
-  height: 60px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  text-align: center;
-  color: #666;
-  border: 1px solid #ddd;
-  background-color: #fafafa;
-  font-size: 12px;
-}
-.btn.btn-app > .fa, .btn.btn-app > .glyphicon, .btn.btn-app > .ion {
-  font-size: 20px;
-  display: block;
-}
-.btn.btn-app:hover {
-  background: #f4f4f4;
-  color: #444;
-  border-color: #aaa;
-}
-.btn.btn-app:active, .btn.btn-app:focus {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.btn.btn-app > .badge {
-  position: absolute;
-  top: -3px;
-  right: -10px;
-  font-size: 10px;
-  font-weight: 400;
-}
-/* ***** /buttons *******/
+
 
 /* *********  /form design  **************************** */
 
@@ -276,42 +280,15 @@ textarea {
   padding: 10px;
   vertical-align: top;
   width: 200px;
+  resize: none;
 }
 textarea:focus {
   outline-style: solid;
   outline-width: 2px;
 }
-.btn_ {
-  display: inline-block;
-  padding: 3px 9px;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  color: #333333;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: #f5f5f5;
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-  border: 1px solid #cccccc;
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
-}
+
+//  Buttons
+
 
 .tagsinput {
   border: 1px solid #CCC;
@@ -372,7 +349,7 @@ span.tag a {
 .select-file-group {
   position: absolute;
   top: 50%;
-  left: 50%; 
+  left: 50%;
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }

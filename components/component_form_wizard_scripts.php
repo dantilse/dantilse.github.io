@@ -8,10 +8,8 @@
 <!-- jQuery Smart Wizard -->
 <script>
 $(document).ready(function() {
-  $('#wizard').smartWizard();
-
-  $('#wizard_verticle').smartWizard({
-    transitionEffect: 'slide'
+  $('#wizard').smartWizard({
+    enableAllSteps: true
   });
 
   $('.buttonNext').addClass('btn btn-success');

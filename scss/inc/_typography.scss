@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { @include heading-set(2.2rem, 2.6rem); }
-h2 { @include heading-set(2rem, 2.2rem); }
+h2 { @include heading-set(2rem, 2.2rem); color: $nxp-orange-base; font-weight: 700; }
 h3 { @include heading-set(1.8rem, 2rem); }
 h4 { @include heading-set(1.6rem, 1.8rem); }
 h5 { @include heading-set(1.4rem, 1.6rem); }
@@ -66,3 +66,5 @@ a, a:visited, a:focus, a:active, :visited, :focus, :active, .btn:focus, .btn:act
 a:hover, a:focus {
   text-decoration: none
 }
+
+// NXP Typography
