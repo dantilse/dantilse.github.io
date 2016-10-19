@@ -7,10 +7,10 @@
 <title>Sample Page | Navigation</title>
 
 <!-- Bootstrap -->
-<link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font Awesome -->
-<link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 <!-- Custom Theme Style -->
-<link href="../css/custom.css" rel="stylesheet">
-<!--link href="../css/nxp-web.css" rel="stylesheet"-->
+<link href="css/custom.css" rel="stylesheet">
+<!--link href="css/nxp-web.css" rel="stylesheet"-->

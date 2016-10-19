@@ -10,18 +10,18 @@
     <title>Gentallela Alela! | </title>
 
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Datatables -->
-    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../css/custom.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -31,7 +31,7 @@
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
               <a href="index.html" class="site_title">
-                <img id="nxp_logo" src="../images/nxp_logo.png" alt="NXP Logo" /> <span>Event Tool</span>
+                <img id="nxp_logo" src="images/nxp_logo.png" alt="NXP Logo" /> <span>Event Tool</span>
               </a>
             </div>
 
@@ -45,18 +45,18 @@
                   <li>
                     <a href="nxp.php"><i class="fa  fa-tachometer"></i> Dashboard</a>
                   </li>
-                  <li><a href="javascript:void(0);"><i class="fa fa-desktop"></i> Events <span class="fa fa-chevron-down"></span></a>
+                  <li class="active"><a href="javascript:void(0);"><i class="fa fa-desktop"></i> Events <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="javascript:void(0);">Create Event</a></li>
+                      <li class="current-page"><a href="javascript:void(0);">Create Event</a></li>
                       <li><a href="manage-events.php">Manage Events</a></li>
                       <li><a href="javascript:void(0);">Archived Events</a></li>
                     </ul>
                   </li>
-                  <li class="active"><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="manage-sessions.php">Manage Sessions</a></li>
                       <li><a href="session-create-new.php">Create New Session</a></li>
-                      <li class="current-page"><a href="session-create-new.html">Create New Session HTML</a></li>
+                      <li><a href="session-create-new.html">Create New Session HTML</a></li>
                       <li><a href="import-sessions.php">Import Sessions</a></li>
                       <li><a href="javascript:void(0);">Archived Sessions</a></li>
                     </ul>
@@ -140,10 +140,8 @@
                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
               </div>
               <ul class="breadcrumbs">
-                <li>Home</li>
-                <li>Events</li>
-                <li>Event Name</li>
-                <li>Sessions</li>
+                <li><a href="nxp.html">Home</a></li>
+                <li>Create Event</li>
               </ul>
 
               <ul class="nav navbar-nav navbar-right">
@@ -170,7 +168,7 @@
               <div class="col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Create New Session</h2>
+                    <h2>Create New Event</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                     </ul>
@@ -184,13 +182,13 @@
                         <li>
                           <a href="#step-1">
                             <span class="step_no"></span>
-                            <span class="step_descr">Global Session Info &ast;</span>
+                            <span class="step_descr">Basic Info &ast;</span>
                           </a>
                         </li>
                         <li>
                           <a href="#step-2">
                             <span class="step_no"></span>
-                            <span class="step_descr">Track Info</span>
+                            <span class="step_descr">Additional Info</span>
                           </a>
                         </li>
                         <li>
@@ -214,19 +212,17 @@
                       </ul>
 
                       <div>
-
-                        <h2><a href="#" id="class-reveal">Click to see Styling Classes</a></h2>
                         <!-- div needed for js to write content. Otherwise it adds a div with set height -->
                         <form>
                           <div id="step-1">
                             <fieldset>
-                              <legend>Global Information</legend>
+                              <legend>Basic Information</legend>
                               <div class="row">
                                 <div class="col-xs-12 col-sm-6">
                                   <div class="form-group">
-                                    <label class="control-label" for="session_template">Select a Template <span class="required">*</span>
+                                    <label class="control-label" for="event_template">Select a Template <span class="required">*</span>
                                     </label>
-                                    <select class="form-control">
+                                    <select id="event_template" class="form-control">
                                       <option selected disabled>Choose Template</option>
                                       <option>FTF Americas</option>
                                       <option>FTF China</option>
@@ -236,66 +232,107 @@
                                   </div>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+                                <div class="col-xs-12 col-sm-6">
                                   <div class="form-group">
-                                    <label class="control-label" for="session_id">Session ID</label>
-                                    <input type="text" id="session_id" class="form-control" placeholder="TBD" disabled>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-8">
-                                  <div class="form-group">
-                                    <label class="control-label" for="session_title">Session Title<span class="required">*</span></label>
-                                    <input type="text" id="session_title" required="required" class="form-control">
-                                  </div>
-
-                                  <div class="form-group">
-                                    <label class="control-label" for="session_abstract">Session Abstract<span class="required">*</span></label>
-                                    <textarea class="form-control" rows="9"></textarea>
-                                  </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-4">
-                                  <div class="form-group">
-                                    <label class="control-label" for="maracom_contact">Marcom Contact <span class="required">*</span>
+                                    <label class="control-label" for="event_category">Select a Category <span class="required">*</span>
                                     </label>
-                                    <select class="form-control" id="marcon_contact">
-                                      <option selected disabled>Choose Contact</option>
-                                      <option>Ashley Snoey</option>
-                                      <option>Ali Stricklen</option>
+                                    <select id="event_category" class="form-control">
+                                      <option selected disabled>Choose Category</option>
+                                      <option>No Sponsors</option>
+                                      <option>Single Sponsor Level</option>
+                                      <option>Multiple Sponsor Levels</option>
                                     </select>
-                                  </div>
-
-                                  <div class="form-group">
-                                    <label class="control-label" for="track_owner">Track Owner <span class="required">*</span>
-                                    </label>
-                                    <select class="form-control" id="track_owner">
-                                      <option selected disabled>Choose Track Owner</option>
-                                      <option>Ashley Snoey</option>
-                                      <option>Ali Stricklen</option>
-                                    </select>
-                                  </div>
-
-                                  <div class="form-group">
-                                    <label class="control-label" for="session_company">Company<span class="required">*</span></label>
-                                    <input type="text" id="session_company" required="required" class="form-control">
-                                  </div>
-
-                                  <div class="form-group">
-                                    <label class="control-label" for="session_business_unit">Business Unit Requesting Content<span class="required">*</span></label>
-                                    <input type="text" id="session_business_unit" required="required" class="form-control">
                                   </div>
                                 </div>
                               </div>
                             </fieldset>
 
+                            <fieldset>
+                              <legend>Event Information</legend>
+                              <div class="row">
+                                <div class="col-xs-12 col-md-8">
+                                  <div class="form-group">
+                                    <label class="control-label" for="event_name">Event Name<span class="required">*</span></label>
+                                    <input type="text" id="event_name" required="required" class="form-control">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label class="control-label" for="event_info">Event Description <span class="required">*</span></label>
+                                    <textarea id="event_info" class="form-control" rows="9"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </fieldset>
+
+                            <fieldset>
+                              <legend>Event Details</legend>
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                  <div class="form-group">
+                                    <label class="control-label" for="event_region">Select a Region <span class="required">*</span>
+                                    </label>
+                                    <select id="event_region" class="form-control">
+                                      <option selected disabled>Choose a Region</option>
+                                      <option>North America</option>
+                                      <option>Europe</option>
+                                      <option>Asia</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                  <div class="form-group">
+                                    <label class="control-label" for="event_country">Select a Country <span class="required">*</span>
+                                    </label>
+                                    <select id="event_country" class="form-control">
+                                      <option selected disabled>Choose Country</option>
+                                      <option>United States</option>
+                                      <option>China</option>
+                                      <option>Japan</option>
+                                      <option>Korea</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                  <div class="form-group">
+                                    <label class="control-label" for="event_city">City<span class="required">*</span></label>
+                                    <input type="text" id="event_city" required="required" class="form-control">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                  <div class="control-group">
+                                    <div class="controls">
+                                      <label class="control-label" for="event_start">Start Date/Time<span class="required">*</span></label>
+                                      <div class="input-prepend input-group">
+                                        <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+                                        <input type="text" name="eventStart" id="event_start" class="form-control" value="03/18/2013 - 03/23/2013">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                  <div class="control-group">
+                                    <div class="controls">
+                                      <label class="control-label" for="event_end">End Date/Time<span class="required">*</span></label>
+                                      <div class="input-prepend input-group">
+                                        <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+                                        <input type="text" name="eventEnd" id="event_end" class="form-control" value="03/18/2013 - 03/23/2013">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </fieldset>
                           </div>
 
                           <div id="step-2">
                             <fieldset>
-                              <legend>Track Inforation</legend>
+                              <legend>Additional Inforation</legend>
                               <div class="row">
                                 <div class="col-sm-6">
                                   <div class="form-group">
@@ -1262,18 +1299,18 @@
     </div>
 
     <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="../js/custom.js"></script>
+    <script src="js/custom.js"></script>
 
     <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
+    <script src="vendors/nprogress/nprogress.js"></script>
     <!-- jQuery Smart Wizard -->
-    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <script src="vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
 
     <!-- jQuery Smart Wizard -->
     <script>
@@ -1290,21 +1327,21 @@
     <!-- /jQuery Smart Wizard -->
 
     <!-- Datatables -->
-    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-    <script src="../vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
-    <script src="../vendors/jszip/dist/jszip.min.js"></script>
-    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
-    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
 
     <!-- Datatables -->
     <script>
@@ -1357,7 +1394,7 @@
         $('#datatable-responsive').DataTable();
 
         $('#datatable-scroller').DataTable({
-          ajax: "../js/datatables/json/scroller-demo.json",
+          ajax: "js/datatables/json/scroller-demo.json",
           deferRender: true,
           scrollY: 380,
           scrollCollapse: true,

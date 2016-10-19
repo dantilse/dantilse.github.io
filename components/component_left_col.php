@@ -1,7 +1,7 @@
 <div class="left_col scroll-view">
   <div class="navbar nav_title" style="border: 0;">
     <a href="index.html" class="site_title">
-      <img id="nxp_logo" src="../images/nxp_logo.png" alt="NXP Logo" /> <span>Event Tool</span>
+      <img id="nxp_logo" src="images/nxp_logo.png" alt="NXP Logo" /> <span>Event Tool</span>
     </a>
   </div>
 

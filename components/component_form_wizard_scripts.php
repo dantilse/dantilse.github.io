@@ -1,9 +1,9 @@
 <!-- FastClick -->
-<script src="../vendors/fastclick/lib/fastclick.js"></script>
+<script src="vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
-<script src="../vendors/nprogress/nprogress.js"></script>
+<script src="vendors/nprogress/nprogress.js"></script>
 <!-- jQuery Smart Wizard -->
-<script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+<script src="vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
 
 <!-- jQuery Smart Wizard -->
 <script>

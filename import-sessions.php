@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 		<!-- Dropzone.js -->
-    <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+    <link href="vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
 
     <?php include('components/component_head.php'); ?>
   </head>
@@ -60,7 +60,7 @@
     <!-- scripts -->
     <?php include('components/component_scripts.php'); ?>
 		<!-- Dropzone.js -->
-    <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="vendors/dropzone/dist/min/dropzone.min.js"></script>
 
   </body>
 </html>

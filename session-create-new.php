@@ -1,17 +1,12 @@
-<?php
-$pageTitle = "Manage Events";
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-		<!-- Datatables -->
-    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
 
     <?php include('components/component_head.php'); ?>
   </head>
@@ -31,9 +26,9 @@ $pageTitle = "Manage Events";
 
         <!-- /page content -->
         <div class="right_col" role="main">
-          <!-- div class="page-title">
+          <div class="page-title">
             <div class="title_left">
-              <h3><?php echo "$pageTitle"; ?></h3>
+              <h3>Page Title</h3>
             </div>
 
             <div class="title_right">
@@ -46,16 +41,14 @@ $pageTitle = "Manage Events";
                 </div>
               </div>
             </div>
-          </div-->
+          </div>
 
           <div class="clearfix"></div>
 
           <!-- Row #1 -->
           <div class="row">
             <div class="col-xs-12">
-              <?php $panelTitle = "Manage Sessions"; include('components/component_panel_start.php'); ?>
-							<?php include('components/component_sessions_table.php'); ?>
-							<?php include('components/component_panel_end.php'); ?>
+              <?php include('components/component_session_create_new.php'); ?>
             </div>
           </div>
         </div>
@@ -70,23 +63,24 @@ $pageTitle = "Manage Events";
 
     <!-- scripts -->
     <?php include('components/component_scripts.php'); ?>
-
-		<!-- Datatables -->
-    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-    <script src="../vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
-    <script src="../vendors/jszip/dist/jszip.min.js"></script>
-    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
-    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+    <!-- form wizard scripts -->
+    <?php include('components/component_form_wizard_scripts.php'); ?>
+    <!-- Datatables -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
 
     <!-- Datatables -->
     <script>
@@ -139,7 +133,7 @@ $pageTitle = "Manage Events";
         $('#datatable-responsive').DataTable();
 
         $('#datatable-scroller').DataTable({
-          ajax: "../js/datatables/json/scroller-demo.json",
+          ajax: "js/datatables/json/scroller-demo.json",
           deferRender: true,
           scrollY: 380,
           scrollCollapse: true,
@@ -154,6 +148,11 @@ $pageTitle = "Manage Events";
       });
     </script>
     <!-- /Datatables -->
+
+    <script>
+//      $(".")
+    </script>
+
 
   </body>
 </html>
