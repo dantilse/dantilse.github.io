@@ -353,3 +353,18 @@ span.tag a {
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }
+
+// Sponsor Application Form
+.sponsor-app-events {
+  .checkbox > label {
+    @include respond-to-max($vp-small) {
+      // setting width to split name & cost
+      width: 75%;
+    }
+  }
+}
+
+// Legend
+legend {
+  border-bottom: 2px solid #e6e9ed;
+}
