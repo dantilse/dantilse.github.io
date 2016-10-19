@@ -17,7 +17,7 @@
         </li>
         <li><a href="javascript:void(0);"><i class="fa fa-desktop"></i> Events <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
-            <li><a href="javascript:void(0);">Create Event</a></li>
+            <li><a href="event-create-new.html">Create Event</a></li>
             <li><a href="manage-events.php">Manage Events</a></li>
             <li><a href="javascript:void(0);">Archived Events</a></li>
           </ul>
@@ -25,7 +25,7 @@
         <li><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
             <li><a href="manage-sessions.php">Manage Sessions</a></li>
-            <li><a href="session-create-new.php">Create New Session</a></li>
+            <li><a href="session-create-new.html">Create New Session</a></li>
             <li><a href="import-sessions.php">Import Sessions</a></li>
             <li><a href="javascript:void(0);">Archived Sessions</a></li>
           </ul>
