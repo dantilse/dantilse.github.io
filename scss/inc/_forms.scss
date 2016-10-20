@@ -356,10 +356,14 @@ span.tag a {
 
 // Sponsor Application Form
 .sponsor-app-events {
-  .checkbox > label {
-    @include respond-to-max($vp-small) {
-      // setting width to split name & cost
-      width: 75%;
+  .checkbox {
+    &:hover { box-shadow: 0 1px 0 0 $white-d10; }
+
+    > label {
+      @include respond-to-max($vp-small) {
+        // setting width to split name & cost
+        width: 75%;
+      }
     }
   }
 }

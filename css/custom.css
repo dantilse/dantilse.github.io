@@ -1097,6 +1097,7 @@ span.tag a { color: #F1F6F7 !important; }
 
 .select-file-group { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%); -ms-transform: translate(-50%); transform: translate(-50%); }
 
+.sponsor-app-events .checkbox:hover { box-shadow: 0 1px 0 0 #E5E5E5; }
 @media screen and (max-width: 767px) { .sponsor-app-events .checkbox > label { width: 75%; } }
 
 legend { border-bottom: 2px solid #e6e9ed; }
