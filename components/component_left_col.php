@@ -13,38 +13,38 @@
       <h3>Menu</h3>
       <ul class="nav side-menu">
         <li>
-          <a href="nxp.php"><i class="fa  fa-tachometer"></i> Dashboard</a>
+          <a href="index.html"><i class="fa  fa-tachometer"></i> Dashboard</a>
         </li>
         <li><a href="javascript:void(0);"><i class="fa fa-desktop"></i> Events <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
             <li><a href="event-create-new.html">Create Event</a></li>
-            <li><a href="manage-events.php">Manage Events</a></li>
-            <li><a href="javascript:void(0);">Archived Events</a></li>
+            <!--li><a href="manage-events.php">Manage Events</a></li-->
+            <!--li><a href="javascript:void(0);">Archived Events</a></li-->
           </ul>
         </li>
         <li><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
-            <li><a href="manage-sessions.php">Manage Sessions</a></li>
+            <!--li><a href="manage-sessions.php">Manage Sessions</a></li-->
             <li><a href="session-create-new.html">Create New Session</a></li>
-            <li><a href="import-sessions.php">Import Sessions</a></li>
-            <li><a href="javascript:void(0);">Archived Sessions</a></li>
+            <!--li><a href="import-sessions.php">Import Sessions</a></li-->
+            <!--li><a href="javascript:void(0);">Archived Sessions</a></li-->
           </ul>
         </li>
         <li><a href="javascript:void(0);"><i class="fa  fa-trophy"></i> Sponsors <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
-            <li><a href="manage-sponsors.php">Manage Sponsors</a></li>
-            <li><a href="javascript:void(0);">Manage Levels</a></li>
-            <li><a href="javascript:void(0);">Manage Pedestals</a></li>
-            <li><a href="javascript:void(0);">Archived Sponsors</a></li>
+            <!--li><a href="manage-sponsors.php">Manage Sponsors</a></li-->
+            <!--li><a href="javascript:void(0);">Manage Levels</a></li-->
+            <!--li><a href="javascript:void(0);">Manage Pedestals</a></li-->
+            <!--li><a href="javascript:void(0);">Archived Sponsors</a></li-->
           </ul>
         </li>
         <li><a href="javascript:void(0);"><i class="fa  fa-flask"></i> Demos <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
-            <li><a href="javascript:void(0);">Demos Dashboard</a></li>
-            <li><a href="javascript:void(0);">Add Demo</a></li>
-            <li><a href="javascript:void(0);">FTF Demos</a></li>
-            <li><a href="javascript:void(0);">Tech Days Demo List</a></li>
-            <li><a href="javascript:void(0);">Status Report ??</a></li>
+            <!--li><a href="javascript:void(0);">Demos Dashboard</a></li-->
+            <!--li><a href="javascript:void(0);">Add Demo</a></li-->
+            <!--li><a href="javascript:void(0);">FTF Demos</a></li-->
+            <!--li><a href="javascript:void(0);">Tech Days Demo List</a></li-->
+            <!--li><a href="javascript:void(0);">Status Report ??</a></li-->
           </ul>
         </li>
         <li><a href="javascript:void(0);"><i class="fa fa-bar-chart"></i> Reporting <span class="fa fa-chevron-down"></span></a>
