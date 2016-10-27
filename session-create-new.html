@@ -55,7 +55,7 @@
                   <li class="active"><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <!--li><a href="manage-sessions.php">Manage Sessions</a></li-->
-                      <li><a href="session-create-new.html">Create New Session</a></li>
+                      <li><a href="session-create-new-initial.html">Create New Session</a></li>
                       <!--li><a href="import-sessions.php">Import Sessions</a></li-->
                       <!--li><a href="javascript:void(0);">Archived Sessions</a></li-->
                     </ul>
@@ -223,35 +223,14 @@
                         </li>
                       </ul>
 
+                      <!-- div needed for js to write content. Otherwise it adds a div with set height -->
                       <div>
-
                         <h2><a href="#" id="class-reveal">Click to see Styling Classes</a></h2>
-                        <!-- div needed for js to write content. Otherwise it adds a div with set height -->
                         <form>
                           <div id="step-1">
                             <fieldset>
-                              <legend>Global Information</legend>
                               <div class="row">
-                                <div class="col-xs-12 col-sm-6">
-                                  <div class="form-group">
-                                    <label class="control-label" for="session_template">Select a Template <span class="required">*</span>
-                                    </label>
-                                    <select class="form-control">
-                                      <option selected disabled>Choose Template</option>
-                                      <option>FTF Americas</option>
-                                      <option>FTF China</option>
-                                      <option>Tech Days Americas</option>
-                                      <option>Tech Days Europe</option>
-                                    </select>
-                                  </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-                                  <div class="form-group">
-                                    <label class="control-label" for="session_id">Session ID</label>
-                                    <input type="text" id="session_id" class="form-control" placeholder="TBD" disabled>
-                                  </div>
-                                </div>
+                                <h4 class="x_title">Company Information</h4>
                               </div>
 
                               <div class="row">
@@ -300,12 +279,14 @@
                                 </div>
                               </div>
                             </fieldset>
-
                           </div>
 
                           <div id="step-2">
                             <fieldset>
-                              <legend>Track Inforation</legend>
+                              <!--legend>Track Inforation</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Track Information</h4>
+                              </div>
                               <div class="row">
                                 <div class="col-xs-12 col-sm-6">
                                   <div class="form-group">
@@ -337,11 +318,11 @@
                               </div>
                             </fieldset>
 
-
-
-                            <!--h2 class="StepTitle">Secondary Tracks: (check all that apply)</h2-->
                             <fieldset>
-                              <legend>Secondary Tracks (check all that apply)</legend>
+                              <!--legend>Secondary Tracks (check all that apply)</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Secondary Tracks (check all that apply)</h4>
+                              </div>
                               <div class="row">
                                 <div class="form-check col-xs-12 col-sm-6 col-md-4">
                                   <label class="checkbox-inline">
@@ -399,10 +380,11 @@
                               </div>
                             </fieldset>
 
-
-                            <!--h2 class="StepTitle">Additional Sub-Tracks: (check all that apply)</h2-->
                             <fieldset>
-                              <legend>Additional Sub-Tracks (check all that apply)</legend>
+                              <!--legend>Additional Sub-Tracks (check all that apply)</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Additional Sub-Tracks (check all that apply)</h4>
+                              </div>
                               <div class="row">
                                 <div class="col-xs-12"><h5 class="checklist-title-header">Design, Software &amp; Services</h5></div>
                                 <div class="form-check col-xs-12 col-sm-6 col-md-4">
@@ -465,7 +447,10 @@
 
                           <div id="step-3">
                             <fieldset>
-                              <legend>Presentation Information</legend>
+                              <!--legend>Presentation Information</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Presentation Information</h4>
+                              </div>
                               <div class="row">
                                 <div class="col-xs-12 col-sm-6">
                                   <div class="form-group">
@@ -522,7 +507,10 @@
                             </fieldset>
 
                             <fieldset>
-                              <legend>Architectures, Software, &amp; Tools (check all that apply)</legend>
+                              <!--legend>Architectures, Software, &amp; Tools (check all that apply)</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Architectures, Software, &amp; Tools (check all that apply)</h4>
+                              </div>
                               <div class="row">
                                 <div class="col-xs-12"><h4 class="checklist-title-header">Design, Software &amp; Services</h4></div>
                                 <div class="form-check col-xs-12 col-sm-6 col-md-4">
@@ -637,16 +625,14 @@
                                 </div>
                               </div>
                             </fieldset>
-
-
-
-                            <!--h2 class="StepTitle">Architectures, Software, &amp; Tools: (check all that apply)</h2-->
-
                           </div>
 
                           <div id="step-4">
                             <fieldset>
-                              <legend>Event Info</legend>
+                              <!--legend>Event Info</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Event Info</h4>
+                              </div>
                             </fieldset>
                             <!-- added inline style, needs to be addressed with stylesheet -->
                             <table id="datatable" class="table row-border table-hover" style="width: 100%;">
@@ -1120,12 +1106,14 @@
                                 </tr>
                               </tbody>
                             </table>
-
                           </div>
 
                           <div id="step-5">
                             <fieldset>
-                              <legend>Presenter Information</legend>
+                              <!--legend>Presenter Information</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Event Info</h4>
+                              </div>
                               <div class="row">
                                 <div class="col-xs-12 col-sm-6">
                                   <div class="form-group">
@@ -1151,7 +1139,10 @@
                             </fieldset>
 
                             <fieldset>
-                              <legend>Duration Information</legend>
+                              <!--legend>Duration Information</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Duration Info</h4>
+                              </div>
                               <div class="row">
                                 <div class="col-xs-12 col-sm-3">
                                   <div class="form-group">
@@ -1218,7 +1209,10 @@
                             </fieldset>
 
                             <fieldset>
-                              <legend>Comments &amp; Requirements</legend>
+                              <!--legend>Comments &amp; Requirements</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Comments &amp; Requirements</h4>
+                              </div>
                               <div class="row">
                                 <div class="col-xs-12 col-sm-3">
                                   <div class="form-group">

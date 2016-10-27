@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -7,12 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sample Page | Navigation</title>
+    <title>Gentallela Alela! | </title>
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Dropzone.js -->
+    <link href="vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="css/custom.css" rel="stylesheet">
@@ -21,12 +24,11 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
-        <div class="col-md-3 left_col">
+        <div class="col-md-3 left_col menu_fixed">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
               <a href="examples/index.html" class="site_title">
-                Example Files
-                <!--img id="nxp_logo" src="images/nxp_logo.png" alt="NXP Logo" /> <span>Event Tool</span-->
+                <img id="nxp_logo" src="images/nxp_logo.png" alt="NXP Logo" /> <span>Event Tool</span>
               </a>
             </div>
 
@@ -37,17 +39,17 @@
               <div class="menu_section">
                 <h3>Menu</h3>
                 <ul class="nav side-menu">
-                  <li class="active">
+                  <li>
                     <a href="index.html"><i class="fa  fa-tachometer"></i> Dashboard</a>
                   </li>
                   <li><a href="javascript:void(0);"><i class="fa fa-desktop"></i> Events <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="event-create-new.html">Create Event</a></li>
-                      <li><a href="javascript:void(0);">Manage Events</a></li>
+                      <!--li><a href="manage-events.php">Manage Events</a></li-->
                       <!--li><a href="javascript:void(0);">Archived Events</a></li-->
                     </ul>
                   </li>
-                  <li><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
+                  <li class="active"><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <!--li><a href="manage-sessions.php">Manage Sessions</a></li-->
                       <li><a href="session-create-new-initial.html">Create New Session</a></li>
@@ -120,7 +122,7 @@
             <!-- /sidebar menu -->
 
             <!-- /menu footer buttons -->
-            <div class="sidebar-footer hidden-small">
+            <!--div class="sidebar-footer hidden-small">
               <a data-toggle="tooltip" data-placement="top" title="Settings">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
               </a>
@@ -133,9 +135,10 @@
               <a data-toggle="tooltip" data-placement="top" title="Logout">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
-            </div>
+            </div-->
             <!-- /menu footer buttons -->
           </div>
+
         </div>
 
         <!-- top navigation -->
@@ -146,7 +149,8 @@
                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
               </div>
               <ul class="breadcrumbs">
-                <li><span class="fa fa-home"></span></li>
+                <li><a href="index.html" class="lead"><span class="fa fa-home"></span></a></li>
+                <li>Create Session</li>
               </ul>
 
               <ul class="nav navbar-nav navbar-right">
@@ -160,151 +164,56 @@
               </ul>
             </nav>
           </div>
+
         </div>
         <!-- /top navigation -->
 
-        <!-- /page content -->
+        <!-- page content -->
         <div class="right_col" role="main">
-          <!--div class="page-title">
-            <div class="title_left">
-              <h3>Page Title</h3>
-            </div>
+          <div class="">
 
-            <div class="title_right">
-              <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Go!</button>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div-->
+            <div class="clearfix"></div>
 
-          <!--div class="clearfix"></div-->
-
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>H2 within a <code>div</code> with a class of <code>x_title</code></h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-
-                <div class="x_content">
-                  <p>This is the content container. It is as <code>div</code> with the class of <code>x_content</code>.</p>
-
-                  <p>The layout for this type of panel is as follows:</p>
-                  <ul>
-                    <li><code>div</code> container with the class of <code>x_panel</code>
-                      <ul>
-                        <li><code>div</code> with class of <code>x_title</code></li>
-                        <ul>
-                          <li><code>h2</code> with the Panel Title</li>
-                          <li>Another <code>ul</code> which handles the collapse feature</code></li>
-                        </ul>
-                        <li><code>div</code> with the class of <code>x_content</code></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <p>Please inspect the code if needed. I believe we'll use the <code>x_title</code> class for areas outside of the <code>x_panel</code> as well to keep things looking the same. These styles will translate to the <code>legend</code> element in forms as well. Below is a blank panel to make copying easier. Place this panel directly into a container with the Bootstrap grid class.</p>
-                </div>
-              </div>
-
-              <!-- Blank Panel for Copying -->
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Title<!-- Title goes here --></h2>
-                  <!-- Panel Collapse, this could be removed if needed -->
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-
-                <div class="x_content">
-                  <pre>
-            &lt;!-- Blank Panel for Copying --&gt;<br />
-              &lt;div class="x_panel"&gt;<br />
-                &lt;div class="x_title"&gt;<br />
-                  &lt;h2&gt;Title&lt;!-- Title goes here --&gt;&lt;/h2&gt;<br />
-                  &lt;!-- Panel Collapse, this could be removed if needed --&gt;<br />
-                  &lt;ul class="nav navbar-right panel_toolbox"&gt;<br />
-                    &lt;li&gt;&lt;a class="collapse-link"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br />
-                  &lt;/ul&gt;<br />
-                  &lt;div class="clearfix"&gt;&lt;/div&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;div class="x_content"&gt;<br />
-                  &lt;!-- content goes here --&gt;<br />
-                &lt;/div&gt;<br />
-              &lt;/div&gt;<br />
-              &lt;!-- End Blank Panel for Copying --&gt;
-                  </pre>
-                  Content
-                  <!-- content goes here -->
-                </div>
-              </div>
-              <!-- End Blank Panel for Copying -->
-            </div>
-          </div>
-
-          <!-- Row #2 -->
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Page Directory</h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-
-                <div class="x_content">
-                  <p>Current pages can be found in the left hand navigation, or a complete list is provided below:</p>
-                  <ul>
-                    <li>Sesions</li>
-                    <ul>
-                      <li><a href="session-create-new.html">Sessions - Create New</a></li>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Create New Session</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                     </ul>
-                    <!--li><a href=""></a></li-->
-                    <li>Third Party Area
-                      <ul>
-                        <li><a href="third-party.html">Sponsors Main Page</a></li>
-                        <li><a href="third-party-edit-contact.html">Sponsor Edit Profile</a></li>
-                        <li><a href="sponsor-application.html">Sponsor Application Form</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="form-group">
+                      <label class="control-label" for="session_template">Select a Template <span class="required">*</span>
+                      </label>
+                      <select class="form-control" id="session_template">
+                        <option selected disabled>Choose Template</option>
+                        <option>FTF Americas</option>
+                        <option>FTF China</option>
+                        <option>Tech Days Americas</option>
+                        <option>Tech Days Europe</option>
+                      </select>
+                    </div>
 
-            <div class="col-xs-12 col-sm-6">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Panel Title</h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
+                    <hr class="hr-or" />
 
-                <div class="x_content">
-                  <p>But we are all in the hands of the Gods; and Pip jumped again. It was under very similar circumstances to the first performance; but this time he did not breast out the line; and hence, when the whale started to run, Pip was left behind on the sea, like a hurried traveller's trunk. Alas! Stubb was but too true to his word. It was a beautiful, bounteous, blue day; the spangled sea calm and cool, and flatly stretching away, all round, to the horizon, like gold-beater's skin hammered out to the extremest. Bobbing up and down in that sea, Pip's ebon head showed like a head of cloves. No boat-knife was lifted when he fell so rapidly astern. Stubb's inexorable back was turned upon him; and the whale was winged. In three minutes, a whole mile of shoreless ocean was between Pip and Stubb. Out from the centre of the sea, poor Pip turned his crisp, curling, black head to the sun, another lonely castaway, though the loftiest and the brightest.</p>
+                    <p>Drag multiple files to the box below for multi upload or click to select files. This is for demonstration purposes only, the files are not uploaded to any server.</p>
+                    <form action="form_upload.html" class="dropzone"></form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- /page content -->
 
         <!-- footer content -->
         <footer>
-          <div class="pull-right">NXP Event Tool</div>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
           <div class="clearfix"></div>
         </footer>
         <!-- /footer content -->
@@ -315,8 +224,20 @@
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Custom Theme Scripts -->
-    <script src="js/custom.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Dropzone.js -->
+    <script src="vendors/dropzone/dist/min/dropzone.min.js"></script>
 
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+
+    <script>
+    $( "#session_template" ).change(function() {
+      window.location.href = "session-create-new.html";
+    });
+    </script>
   </body>
 </html>
