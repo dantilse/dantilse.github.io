@@ -355,8 +355,8 @@ a.btn-success, a.btn-primary, a.btn-warning, a.btn-danger { color: #FFFFFF; }
 /* end _grid.scss */
 /* start _footer.scss */
 footer { background: #fff; padding: 15px 20px; display: block; }
+@media screen and (min-width: 992px) { footer { margin-left: 230px; } }
 
-@media (min-width: 768px) { footer { margin-left: 230px; } }
 .nav-sm footer { margin-left: 70px; }
 
 .footer_fixed footer { position: fixed; left: 0px; bottom: 0px; width: 100%; }
@@ -1590,7 +1590,7 @@ div[data-role="editor-toolbar"] { -webkit-user-select: none; -moz-user-select: n
 
 /* end _cropper.scss */
 /* start _jquery-smart-wizard.scss */
-.form_wizard .stepContainer { display: block; position: relative; margin: 0; padding: 0; border: 0 solid #CCCCCC; }
+.form_wizard .stepContainer { display: block; position: relative; height: auto !important; margin: 0; padding: 0; border: 0 solid #CCCCCC; }
 
 .actionBar { width: 100%; border-top: 1px solid #ddd; padding: 10px 5px; text-align: right; margin-top: 10px; }
 .actionBar .buttonDisabled { cursor: not-allowed; pointer-events: none; opacity: .65; filter: alpha(opacity=65); box-shadow: none; }

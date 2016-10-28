@@ -19,6 +19,8 @@ $enabled        : $aqua-l32;
 .form_wizard .stepContainer {
   display: block;
   position: relative;
+  // adding auto height to adjust screen hight on window resize
+  height: auto !important; 
   margin: 0;
   padding: 0;
   border: 0 solid $white-d20;
