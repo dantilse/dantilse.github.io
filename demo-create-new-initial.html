@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Create New Session</title>
+    <title>Create New Demo</title>
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                       <!--li><a href="javascript:void(0);">Archived Events</a></li-->
                     </ul>
                   </li>
-                  <li class="active"><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <!--li><a href="manage-sessions.php">Manage Sessions</a></li-->
                       <li><a href="session-create-new-initial.html">Create New Session</a></li>
@@ -65,7 +65,7 @@
                       <!--li><a href="javascript:void(0);">Archived Sponsors</a></li-->
                     </ul>
                   </li>
-                  <li><a href="javascript:void(0);"><i class="fa  fa-flask"></i> Demos <span class="fa fa-chevron-down"></span></a>
+                  <li class="active"><a href="javascript:void(0);"><i class="fa  fa-flask"></i> Demos <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <!--li><a href="javascript:void(0);">Demos Dashboard</a></li-->
                       <li><a href="demo-create-new-initial.html">Create New Demo</a></li>
@@ -178,7 +178,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Create New Session</h2>
+                    <h2>Create New Demo</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                     </ul>
@@ -186,9 +186,9 @@
                   </div>
                   <div class="x_content">
                     <div class="form-group">
-                      <label class="control-label" for="session_template">Select a Template <span class="required">*</span>
+                      <label class="control-label" for="demo_template">Select a Template <span class="required">*</span>
                       </label>
-                      <select class="form-control" id="session_template">
+                      <select class="form-control" id="demo_template">
                         <option selected disabled>Choose Template</option>
                         <option>FTF Americas</option>
                         <option>FTF China</option>
@@ -235,8 +235,8 @@
     <script src="js/custom.min.js"></script>
 
     <script>
-    $( "#session_template" ).change(function() {
-      window.location.href = "session-create-new.html";
+    $( "#demo_template" ).change(function() {
+      window.location.href = "demo-create-new.html";
     });
     </script>
   </body>

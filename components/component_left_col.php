@@ -41,7 +41,7 @@
         <li><a href="javascript:void(0);"><i class="fa  fa-flask"></i> Demos <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
             <!--li><a href="javascript:void(0);">Demos Dashboard</a></li-->
-            <!--li><a href="javascript:void(0);">Add Demo</a></li-->
+            <li><a href="demo-create-new-initial.html">Create New Demo</a></li>
             <!--li><a href="javascript:void(0);">FTF Demos</a></li-->
             <!--li><a href="javascript:void(0);">Tech Days Demo List</a></li-->
             <!--li><a href="javascript:void(0);">Status Report ??</a></li-->
