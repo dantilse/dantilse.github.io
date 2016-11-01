@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Create New Session</title>
+    <title>Create New Demo</title>
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                       <!--li><a href="javascript:void(0);">Archived Events</a></li-->
                     </ul>
                   </li>
-                  <li class="active"><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <!--li><a href="manage-sessions.php">Manage Sessions</a></li-->
                       <li><a href="session-create-new-initial.html">Create New Session</a></li>
@@ -65,7 +65,7 @@
                       <!--li><a href="javascript:void(0);">Archived Sponsors</a></li-->
                     </ul>
                   </li>
-                  <li><a href="javascript:void(0);"><i class="fa  fa-flask"></i> Demos <span class="fa fa-chevron-down"></span></a>
+                  <li class="active"><a href="javascript:void(0);"><i class="fa  fa-flask"></i> Demos <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <!--li><a href="javascript:void(0);">Demos Dashboard</a></li-->
                       <li><a href="demo-create-new-initial.html">Create New Demo</a></li>
@@ -150,7 +150,7 @@
               </div>
               <ul class="breadcrumbs">
                 <li><a href="index.html">Home</a></li>
-                <li>Create Session</li>
+                <li>Create Demo</li>
               </ul>
 
               <ul class="nav navbar-nav navbar-right">
@@ -178,29 +178,113 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Create New Session</h2>
+                    <h2>Event Name Sponsor Levels</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                     </ul>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <div class="form-group">
-                      <label class="control-label" for="session_template">Select a Template <span class="required">*</span>
-                      </label>
-                      <select class="form-control" id="session_template">
-                        <option selected disabled>Choose Template</option>
-                        <option>FTF Americas</option>
-                        <option>FTF China</option>
-                        <option>Tech Days Americas</option>
-                        <option>Tech Days Europe</option>
-                      </select>
+                    <div class="row x_content_inner">
+                      <div class="col-xs-12">
+                        <h4 class="x_title">Event Info</h4>
+                        <p><strong>Designing with NXP Automotive</strong> - Chicago, IL USA - May 12, 2016</p>
+                      </div>
                     </div>
 
-                    <hr class="hr-or" />
+                    <div class="row x_content_inner">
+                      <div class="col-xs-12">
+                        <h4 class="x_title">Sponsor Levels</h4>
+                      </div>
 
-                    <p>Drag multiple files to the box below for multi upload or click to select files. This is for demonstration purposes only, the files are not uploaded to any server.</p>
-                    <form action="form_upload.html" class="dropzone"></form>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="form-check">
+                          <label class="checkbox-inline">
+                            <input type="checkbox" id="enable_sponsors" value="enabled"> Enable Sponsorships for this Event
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-7">
+                        <div class="form-check">
+                          <label class="checkbox-inline">
+                            <input type="checkbox" id="disable_date" value="disabled"> Disable Sponsorships on a specific date
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12">
+                        <table id="datatable sponsor_level_table" class="table row-border table-hover" style="width: 100%;">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Level Name</th>
+                              <th>Quantity</th>
+                              <th>Presentations</th>
+                              <th>Pedestals</th>
+                              <th>Cost</th>
+                              <th>Revenue</th>
+                              <th>Closed</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td><span classs="fa fa-circle silver"></span></td>
+                              <th>Silver</th>
+                              <td>15/20</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>$3,000</td>
+                              <td>$42,370</td>
+                              <td><div class="form-check">
+                                <input type="checkbox" id="close_level" value="closed">
+                              </div></td>
+                              <td><a href="#nogo"><span class="fa fa-trash"></span></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <a href="#nogo" id="add_sponsor_link" class="pull-right"><span class="fa fa-plus"></span> Add Sponsor Level</a>
+                      </div>
+                    </div>
+
+
+                    <div class="row x_content_inner">
+                      <div class="col-xs-12">
+                        <h4 class="x_title">Important Dates</h4>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group">
+                          <label class="control-label" for="company_info">Company Info Due</label>
+                          <input type="text" id="company_info" required="required" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group">
+                          <label class="control-label" for="company_info">Sponsor Abstract Due</label>
+                          <input type="text" id="sponsor_abstract" required="required" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group">
+                          <label class="control-label" for="company_info">Sponsor Pedestal Due</label>
+                          <input type="text" id="sponsor_pedestal" required="required" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group">
+                          <label class="control-label" for="company_info">Presentation Due</label>
+                          <input type="text" id="presentation" required="required" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="btn btn-primary">Save Changes</button>
                   </div>
                 </div>
               </div>
@@ -233,8 +317,13 @@
     <script src="js/custom.min.js"></script>
 
     <script>
-    $( "#session_template" ).change(function() {
-      window.location.href = "session-create-new.html";
+    $(document).ready(function() {
+      $("table, #add_sponsor_link").addClass("hidden");
+
+      $("#enable_sponsors").change(function() {
+        $("table, #add_sponsor_link").toggleClass("hidden");
+      });
+
     });
     </script>
   </body>
