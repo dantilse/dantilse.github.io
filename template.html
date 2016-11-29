@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Template</title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="examples/index.html" class="site_title">
+                Example Files
+                <!--img id="nxp_logo" src="images/nxp_logo.png" alt="NXP Logo" /> <span>Event Tool</span-->
+              </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Menu</h3>
+                <ul class="nav side-menu">
+                  <li class="active">
+                    <a href="index.html"><i class="fa  fa-tachometer"></i> Dashboard</a>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-desktop"></i> Events <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="event-create-new.html">Create Event</a></li>
+                      <!--li><a href="javascript:void(0);">Manage Events</a></li-->
+                      <!--li><a href="javascript:void(0);">Archived Events</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="manage-sessions.php">Manage Sessions</a></li-->
+                      <li><a href="session-create-new-initial.html">Create New Session</a></li>
+                      <!--li><a href="import-sessions.php">Import Sessions</a></li-->
+                      <!--li><a href="javascript:void(0);">Archived Sessions</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa  fa-trophy"></i> Sponsors <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="manage-sponsors.php">Manage Sponsors</a></li-->
+                      <li><a href="sponsors-levels.html">Manage Levels</a></li>
+                      <!--li><a href="javascript:void(0);">Manage Pedestals</a></li-->
+                      <!--li><a href="javascript:void(0);">Archived Sponsors</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa  fa-flask"></i> Demos <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="javascript:void(0);">Demos Dashboard</a></li-->
+                      <li><a href="demo-create-new-initial.html">Create New Demo</a></li>
+                      <!--li><a href="javascript:void(0);">FTF Demos</a></li-->
+                      <!--li><a href="javascript:void(0);">Tech Days Demo List</a></li-->
+                      <!--li><a href="javascript:void(0);">Status Report ??</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-bar-chart"></i> Reporting <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="javascript:void(0);">Reports Dashboard</a></li-->
+                      <!--li><a href="javascript:void(0);">Event Info</a></li-->
+                      <!--li><a href="javascript:void(0);">Session Info</a></li-->
+                      <!--li><a href="javascript:void(0);">Attendance Info</a></li-->
+                      <!--li><a href="javascript:void(0);">Common Reports</a></li-->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu_section">
+                <h3>Super Admin</h3>
+                <ul class="nav side-menu">
+                  <li><a href="javascript:void(0);"><i class="fa fa-edit"></i> Templates <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="javascript:void(0);">Templates Dashboard</a></li-->
+                      <!--li><a href="javascript:void(0);">Create New</a></li-->
+                      <!--li><a href="javascript:void(0);">Manage Templates</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa  fa-users"></i> User Mgmt. <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="javascript:void(0);">User Management Dashboard</a></li-->
+                      <!--li><a href="javascript:void(0);">Add User</a></li-->
+                      <!--li><a href="javascript:void(0);">Manage Users</a></li-->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu_section">
+                <h3>Third Party Area</h3>
+                <ul class="nav side-menu">
+                  <li><a href="javascript:void(0);"><i class="fa fa-edit"></i> Sponsors <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="third-party.html">Sponsor Main Page</a></li>
+                      <li><a href="third-party-edit-contact.html">Sponsor Edit Info</a></li>
+                      <li><a href="sponsor-application.html">Sponsor Application Form</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <ul class="breadcrumbs">
+                <li>Home</li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">John Doe&nbsp;<span class="fa fa-angle-down"></span></a>
+
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- /page content -->
+        <div class="right_col" role="main">
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- Blank Panel for Copying -->
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Title<!-- Title goes here --></h2>
+                  <!-- Panel Collapse, this could be removed if needed -->
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="x_content">
+                  <form>
+                    <fieldset>
+                      <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="form-group">
+                            <label class="control-label" for="temp_name">Template Name<span class="required">*</span></label>
+                            <input type="text" id="temp_name" required="required" class="form-control">
+                          </div>
+
+                          <div class="form-group">
+                            <label class="control-label" for="temp_categories">Template Categories<span class="required">*</span></label>
+                            <input type="text" id="temp_categories" required="required" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="well">
+                      <h4 class="x_title">Additional Info</h4>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <table id="datatable" class="table row-border table-hover" style="width: 100%;">
+                            <thead>
+                              <tr>
+                                <th>Component Area</th>
+                                <th>Attendee</th>
+                                <th>Government</th>
+                                <th>Media/Analyst</th>
+                                <th>NXP Employee</th>
+                                <th>Student/Educator</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>Payment Information</td>
+                                <td><input type="checkbox" id="payment_info_attendee" value="payment-attendee"></td>
+                                <td><input type="checkbox" id="payment_info_govt" value="payment-govt"></td>
+                                <td><input type="checkbox" id="payment_info_media" value="payment-media"></td>
+                                <td><input type="checkbox" id="payment_info_nxp" value="payment-nxp"></td>
+                                <td><input type="checkbox" id="payment_info_student" value="payment-student"></td>
+                              </tr>
+                              <tr>
+                                <td>File Upload and Display Text</td>
+                                <td><input type="checkbox" id="file_upload_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="file_upload_govt" value="option1"></td>
+                                <td><input type="checkbox" id="file_upload_media" value="option1"></td>
+                                <td><input type="checkbox" id="file_upload_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="file_upload_student" value="option1"></td>
+                              </tr>
+                              <tr>
+                                <td>Hyperlink</td>
+                                <td><input type="checkbox" id="hyperlink_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="hyperlink_govt" value="option1"></td>
+                                <td><input type="checkbox" id="hyperlink_media" value="option1"></td>
+                                <td><input type="checkbox" id="hyperlink_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="hyperlink_student" value="option1"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="row payment-options-active">
+                        <div class="col-xs-12">
+                          <h5>Payment Options</h5>
+                          <p>Please select the Payment Options that should be allowed when creating events with this template.</p>
+                        </div>
+                        <div class="col-xs-12">
+                          <label class="checkbox-inline">
+                            <input type="checkbox" id="pay-opt-check" value="check"> Check
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" id="pay-opt-credit" value="credit"> Credit Card
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" id="pay-opt-po" value="purchase-order"> Purchase Order
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" id="pay-opt-wire-trans" value="wire-transfer"> Wire Transfer
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="well">
+                      <h4 class="x_title">Attendee Options</h4>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <table id="datatable" class="table row-border table-hover" style="width: 100%;">
+                            <thead>
+                              <tr>
+                                <th>Component Area</th>
+                                <th>Attendee</th>
+                                <th>Government</th>
+                                <th>Media/Analyst</th>
+                                <th>NXP Employee</th>
+                                <th>Student/Educator</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>Special Meal Question</td>
+                                <td><input type="checkbox" id="special_meal_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="special_meal_govt" value="option1"></td>
+                                <td><input type="checkbox" id="special_meal_media" value="option1"></td>
+                                <td><input type="checkbox" id="special_meal_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="special_meal_student" value="option1"></td>
+                              </tr>
+                              <tr>
+                                <td>Company Information</td>
+                                <td><input type="checkbox" id="company_info_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="company_info_govt" value="option1"></td>
+                                <td><input type="checkbox" id="company_info_media" value="option1"></td>
+                                <td><input type="checkbox" id="company_info_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="company_info_student" value="option1"></td>
+                              </tr>
+                              <tr>
+                                <td>Event Information</td>
+                                <td><input type="checkbox" id="event_info_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="event_info_govt" value="option1"></td>
+                                <td><input type="checkbox" id="event_info_media" value="option1"></td>
+                                <td><input type="checkbox" id="event_info_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="event_info_student" value="option1"></td>
+                              </tr>
+                              <tr>
+                                <td>Extra Question</td>
+                                <td><input type="checkbox" id="extra_question_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="extra_question_govt" value="option1"></td>
+                                <td><input type="checkbox" id="extra_question_media" value="option1"></td>
+                                <td><input type="checkbox" id="extra_question_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="extra_question_student" value="option1"></td>
+                              </tr>
+                              <tr>
+                                <td>Hotel Information</td>
+                                <td><input type="checkbox" id="hotel_info_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="hotel_info_govt" value="option1"></td>
+                                <td><input type="checkbox" id="hotel_info_media" value="option1"></td>
+                                <td><input type="checkbox" id="hotel_info_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="hotel_info_student" value="option1"></td>
+                              </tr>
+                              <tr>
+                                <td>Guest Information</td>
+                                <td><input type="checkbox" id="guest_information_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="guest_information_govt" value="option1"></td>
+                                <td><input type="checkbox" id="guest_information_media" value="option1"></td>
+                                <td><input type="checkbox" id="guest_information_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="guest_information_student" value="option1"></td>
+                              </tr>
+                              <tr>
+                                <td>Attendance Preference</td>
+                                <td><input type="checkbox" id="attendance_pref_attendee" value="option1"></td>
+                                <td><input type="checkbox" id="attendance_pref_govt" value="option1"></td>
+                                <td><input type="checkbox" id="attendance_pref_media" value="option1"></td>
+                                <td><input type="checkbox" id="attendance_pref_nxp" value="option1"></td>
+                                <td><input type="checkbox" id="attendance_pref_student" value="option1"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="row guest-info-active">
+                        <div class="col-xs-12">
+                          <h5>Guest Info</h5>
+                          <p>Please select the Guest Information question and answers that should be avisible on the registration form.</p>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                              <label class="control-label" for="guest_info_question">Guest Info Question</label>
+                              <input type="text" id="guest_info_question" class="form-control">
+                            </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-2">
+                            <div class="form-group">
+                              <label class="control-label" for="guest_info_type">Duration</label>
+                              <select class="form-control" id="guest_info_type">
+                                <option selected disabled>Select a Type</option>
+                                <option>List of Values</option>
+                                <option>Text Area</option>
+                                <option>Text Input</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <label class="control-label" for="guest_info_response">Guest Info Response</label>
+                              <input type="text" id="guest_info_response" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row attendance-info-active">
+                        <div class="col-xs-12">
+                          <h5>Attendance Info</h5>
+                          <p>Please select the Attendance Information question and answers that should be avisible on the registration form.</p>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                              <label class="control-label" for="attendance_info_question">Attendance Info Question</label>
+                              <input type="text" id="attendance_info_question" class="form-control">
+                            </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-2">
+                            <div class="form-group">
+                              <label class="control-label" for="attendance_info_type">Duration</label>
+                              <select class="form-control" id="attendance_info_type">
+                                <option selected disabled>Select a Type</option>
+                                <option>List of Values</option>
+                                <option>Text Area</option>
+                                <option>Text Input</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <label class="control-label" for="attendance_info_response">Attendance Info Response</label>
+                              <input type="text" id="attendance_info_response" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                  <!-- content goes here -->
+                </div>
+              </div>
+              <!-- End Blank Panel for Copying -->
+            </div>
+          </div>
+        </div>
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">NXP Event Tool</div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        // hide element to be shown on click
+//        $(".payment-options-active").addClass("hidden");
+
+        $("input[id*='payment_info']").change(function() {
+//          if ($("input[id*='payment_info']")is(":checked")) {
+//            $(".payment-options-active.hidden").removeClass("hidden");
+//          }
+        });
+
+      });
+    </script>
+
+  </body>
+</html>

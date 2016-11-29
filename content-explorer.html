@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Content Explorer</title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Treeview -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="third-party">
+    <div class="container body">
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav class="">
+            <!--h1><a href="#"></a></h1-->
+            <img id="nxp_logo" src="images/nxp_logo.png" alt="NXP Logo" />
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Adeno Embedded&nbsp;<span class="fa fa-angle-down"></span></a>
+
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">English&nbsp;<span class="fa fa-angle-down"></span></a>
+
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="login.html"><i class="fa fa-globe"></i> Chinese</a></li>
+                  <li><a href="login.html"><i class="fa fa-globe"></i> English</a></li>
+                  <li><a href="login.html"><i class="fa fa-globe"></i> Korean</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="main">
+        <h1 class="event-name">NXP FTF Technology Forum Austin, US 2016 - Content Explorer</h1>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <aside class="treeview">
+              <h6 class="left-nav-title">Session Information</h6>
+              <ul class="left-nav">
+                <!--li><strong>Session Information</strong></li-->
+                <li><a href="#">View High Level Agenda</a></li>
+                <li><a href="#">View Full Converence Schedule</a></li>
+              </ul>
+
+              <h6 class="left-nav-title">Filter Sessions By:</h6>
+              <ul class="left-nav">
+                <li><a href="#">All Sessions</a></li>
+                <li><a href="#architecture_sub" data-toggle="collapse" aria-controls="architecture_sub">Architectures, Software &amp; Tools</a>
+                  <ul id="architecture_sub" class="collapse">
+                    <li><a href="#">ARM Processors <span class="count">(5)</span></a></li>
+                    <li><a href="#">Identification &amp; Security <span class="count">(2)</span></a></li>
+                    <li><a href="#">Interface &amp; Connectivity <span class="count">(3)</span></a></li>
+                    <li><a href="#">Power Mangement <span class="count">(5)</span></a></li>
+                    <li><a href="#">Software &amp; Tools <span class="count">(1)</span></a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#company_sub" data-toggle="collapse" aria-controls="company_sub">Company</a>
+                  <ul id="company_sub" class="collapse">
+                    <li><a href="#">Arrow Electronics <span class="count">(1)</span></a></li>
+                    <li><a href="#">Avnet <span class="count">(5)</span></a></li>
+                    <li><a href="#">Digi International <span class="count">(3)</span></a></li>
+                    <li><a href="#">Future Electronics <span class="count">(2)</span></a></li>
+                    <li><a href="#">NXP Semiconductors <span class="count">(4)</span></a></li>
+                    <li><a href="#">Toradex Inc <span class="count">(1)</span></a></li>
+                    <li><a href="#">Turing Computer <span class="count">(5)</span></a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#level_sub" data-toggle="collapse" aria-controls="level_sub">Session Level</a>
+                  <ul id="level_sub" class="collapse">
+                    <li><a href="#">Basic <span class="count">(5)</span></a></li>
+                    <li><a href="#">Intermediate <span class="count">(2)</span></a></li>
+                    <li><a href="#">Advanced <span class="count">(3)</span></a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#type_sub" data-toggle="collapse" aria-controls="type_sub">Session Type</a>
+                  <ul id="type_sub" class="collapse">
+                    <li><a href="#">Hands-On Workshop <span class="count">(5)</span></a></li>
+                    <li><a href="#">Lecture / Lecture &amp; Demo Sessions <span class="count">(2)</span></a></li>
+                    <li><a href="#">Lunch and Learn Sessions <span class="count">(3)</span></a></li>
+                    <li><a href="#">Panel Sessions <span class="count">(1)</span></a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#track_sub" data-toggle="collapse" aria-controls="track_sub">Track</a>
+                  <ul id="track_sub" class="collapse">
+                    <li><a href="#track_design_sub" data-toggle="collapse" aria-controls="track_design_sub">Design, Software &amp; Services</a>
+                      <ul id="track_design_sub" class="collapse">
+                        <li><a href="#nogo">All Design, Software &amp; Services <span class="count">(5)</span></a></li>
+                        <li><a href="#nogo">Embedded Design Techniques <span class="count">(5)</span></a></li>
+                        <li><a href="#nogo">IDEs, Stacks, Libraries &amp; Software Solutions <span class="count">(5)</span></a></li>
+                        <li><a href="#nogo">Other Software, Tools &amp; Services <span class="count">(5)</span></a></li>
+                        <li><a href="#nogo">Security Considerations for Embedded Systems <span class="count">(5)</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#track_insight_sub" data-toggle="collapse" aria-controls="track_insight_sub">Insight &amp; Innovation</a>
+                      <ul id="track_insight_sub" class="collapse">
+                        <li><a href="#nogo">All Insight &amp; Innovation <span class="count">(5)</span></a></li>
+                        <li><a href="#nogo">Alliances, Consortia &amp; Standards <span class="count">(5)</span></a></li>
+                        <li><a href="#nogo">Emerging Trends &amp; Roadmaps <span class="count">(5)</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Secure Mobile, Healthcare &amp; Wearables</a></li>
+                    <li><a href="#">Smart Cities &amp; Infrastructure</a></li>
+                    <li><a href="#">Smart Home &amp; Buildings</a></li>
+                    <li><a href="#">Smart Machinery &amp; Industrial Automation</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h6 class="left-nav-title">Supporting Information</h6>
+              <ul class="left-nav">
+                <li><a href="#">Track Descriptions</a></li>
+                <li><a href="#">Session Levels</a></li>
+                <li><a href="#">Session Types</a></li>
+              </ul>
+            </aside>
+          </div>
+
+          <!-- Session List -->
+          <div class="col-xs-12 col-sm-9">
+            <header>
+              <a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <h2>Friday October 15, 2016</h2>
+              <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </header>
+
+            <div class="hour-marker">
+              <h4>11:00 am</h4>
+            </div>
+
+            <!-- First Item -->
+            <div class="session-item">
+              <div class="left-col">
+                <span class="glyphicon glyphicon-star unselected"></span>
+              </div>
+              <div class="mid-col">
+                <ul class="session-item-info date-time-info meta">
+                  <li>
+                    <span class="glyphicon glyphicon-time"></span>
+                    <span class="date-time">Friday Oct. 15 11:ooam - 12:00pm</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="location">Palm Ballroom III - Kinetis Table</span>
+                  </li>
+                </ul>
+                <ul class="session-item-info session-title">
+                  <li>Building an IPv6 Network Using Kinetis W and the Thread® Protocol (Reserved Seat Required)</li>
+                </ul>
+                <ul class="session-item-info session-meta meta">
+                  <li>
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <span class="track">Smart Home &amp; Buildings</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <span class="session-type">Hands-On Workshop</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="company">NXP Semiconductors</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-col">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+              </div>
+              <div class="content hidden">
+                <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
+              </div>
+            </div>
+
+            <!-- Second Item -->
+            <div class="session-item">
+              <div class="left-col">
+                <span class="glyphicon glyphicon-star unselected"></span>
+              </div>
+              <div class="mid-col">
+                <ul class="session-item-info date-time-info  meta">
+                  <li>
+                    <span class="glyphicon glyphicon-time"></span>
+                    <span class="date-time">Friday Oct. 15 11:15am - 12:15pm</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="location">Chromium</span>
+                  </li>
+                </ul>
+                <ul class="session-item-info session-title">
+                  <li>Why Embedded Linux Makes Sense and Making Sense of Embedded Linux</li>
+                </ul>
+                <ul class="session-item-info session-meta  meta">
+                  <li>
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <span class="track">Insight &amp; Innovation</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <span class="session-type">Panel</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="company">KRYPTUS Soutions</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-col">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+              </div>
+              <div class="content hidden">
+                <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
+              </div>
+            </div>
+
+            <!-- Third Item -->
+            <div class="session-item">
+              <div class="left-col">
+                <span class="glyphicon glyphicon-star unselected"></span>
+              </div>
+              <div class="mid-col">
+                <ul class="session-item-info date-time-info  meta">
+                  <li>
+                    <span class="glyphicon glyphicon-time"></span>
+                    <span class="date-time">Friday Oct. 15 11:15am - 12:15pm</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="location">Zirconium</span>
+                  </li>
+                </ul>
+                <ul class="session-item-info session-title">
+                  <li>Adding Hotspot Features (3G/4G-Wi-Fi Router) to Your Multimedia Product (Reserved Seat Required)</li>
+                </ul>
+                <ul class="session-item-info session-meta meta">
+                  <li>
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <span class="track">Design, Software &amp; Services</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <span class="session-type">Hands-On Workshop</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="company">Turing Computer</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-col">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+              </div>
+              <div class="content hidden">
+                <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
+              </div>
+            </div>
+            <div class="hour-marker">
+              <h4>12:00 pm</h4>
+              <span class="line-marker"></span>
+            </div>
+            <!-- First Item -->
+            <div class="session-item">
+              <div class="left-col">
+                <span class="glyphicon glyphicon-star unselected"></span>
+              </div>
+              <div class="mid-col">
+                <ul class="session-item-info date-time-info meta">
+                  <li>
+                    <span class="glyphicon glyphicon-time"></span>
+                    <span class="date-time">Friday Oct. 15 11:ooam - 12:00pm</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="location">Palm Ballroom III - Kinetis Table</span>
+                  </li>
+                </ul>
+                <ul class="session-item-info session-title">
+                  <li>Building an IPv6 Network Using Kinetis W and the Thread® Protocol (Reserved Seat Required)</li>
+                </ul>
+                <ul class="session-item-info session-meta meta">
+                  <li>
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <span class="track">Smart Home &amp; Buildings</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <span class="session-type">Hands-On Workshop</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="company">NXP Semiconductors</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-col">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+              </div>
+              <div class="content hidden">
+                <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
+              </div>
+            </div>
+
+            <!-- Second Item -->
+            <div class="session-item">
+              <div class="left-col">
+                <span class="glyphicon glyphicon-star unselected"></span>
+              </div>
+              <div class="mid-col">
+                <ul class="session-item-info date-time-info  meta">
+                  <li>
+                    <span class="glyphicon glyphicon-time"></span>
+                    <span class="date-time">Friday Oct. 15 11:15am - 12:15pm</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="location">Chromium</span>
+                  </li>
+                </ul>
+                <ul class="session-item-info session-title">
+                  <li>Why Embedded Linux Makes Sense and Making Sense of Embedded Linux</li>
+                </ul>
+                <ul class="session-item-info session-meta  meta">
+                  <li>
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <span class="track">Insight &amp; Innovation</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <span class="session-type">Panel</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="company">KRYPTUS Soutions</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-col">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+              </div>
+              <div class="content hidden">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <h4>Presenter</h4>
+                    <div class="presenter-profile clearfix">
+                      <div class="img-responsive pull-left">
+                        <img src="http://placehold.it/50x50">
+                      </div>
+                      <p><span class="lead">Henrique Kawakami</span><br />
+                        Technical Director: KRYPTUS Solucions in Security and Information
+                      </p>
+                    </div>
+
+                    <div class="bio">
+                      <p>This would be a short bio for the Presenter if provided, in order to give the attendee an idea for the presenter’s background and qualifications. The bio should be limited to a set word count, or could include another link if it …</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="session-meta-info">
+                      <ul>
+                        <li><strong>Track:&nbsp;</strong>Insights &amp; Innovation</li>
+                        <li><strong>Sub-Track:&nbsp;</strong>Embedded Design Techniques</li>
+                        <li><strong>Architectures:&nbsp;</strong>Software &amp; Tools</li>
+                        <li><strong>Session Level:&nbsp;</strong>Basic</li>
+                        <li><strong>Session Type:&nbsp;</strong>Panel Session</li>
+                        <li><strong>Design Cycle Phase:&nbsp;</strong>Define (Create Awareness, Identify Opportunities)</li>
+                        <li><strong>Language:&nbsp;</strong>Portugese</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Item -->
+            <div class="session-item">
+              <div class="left-col">
+                <span class="glyphicon glyphicon-star unselected"></span>
+              </div>
+              <div class="mid-col">
+                <ul class="session-item-info date-time-info  meta">
+                  <li>
+                    <span class="glyphicon glyphicon-time"></span>
+                    <span class="date-time">Friday Oct. 15 11:15am - 12:15pm</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="location">Zirconium</span>
+                  </li>
+                </ul>
+                <ul class="session-item-info session-title">
+                  <li>Adding Hotspot Features (3G/4G-Wi-Fi Router) to Your Multimedia Product (Reserved Seat Required)</li>
+                </ul>
+                <ul class="session-item-info session-meta meta">
+                  <li>
+                    <span class="glyphicon glyphicon-bookmark"></span>
+                    <span class="track">Design, Software &amp; Services</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <span class="session-type">Hands-On Workshop</span>
+                  </li>
+                  <li>
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="company">Turing Computer</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-col">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+              </div>
+              <div class="content hidden">
+                <p class="description">In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
+
+                <div class="presenter-info-container">
+                  <div class="presenter-container">
+                    <div class="presenter">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <div class="presenter-info">
+                      <p class="presenter-lead">Presenter:</p>
+                      <h5 class="presenter-title">Henrique Kawakami</h5>
+                      <p class="presenter-credentials">Technical Director: KRYPTUS Solucoes em Seguranca da Informacao</p>
+                    </div>
+                    <div class="presenter-bio">
+                      <p>This would be a short bio for the Presenter if provided, in order to give the attendee an idea for the presenter’s background and qualifications. The bio should be limited to a set word count, or could include another link if it …</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="co-presenter-container">
+                  <div class="presenter co-presenter">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <div class="presenter-info">
+                      <p class="presenter-lead">Co-Presenter:</p>
+                      <h5 class="presenter-title">Henrique Kawakami</h5>
+                      <p class="presenter-credentials">Technical Director: KRYPTUS Solucoes em Seguranca da Informacao</p>
+                    </div>
+                  </div>
+
+                  <div class="presenter co-presenter">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <div class="presenter-info">
+                      <p class="presenter-lead">Co-Presenter:</p>
+                      <h5 class="presenter-title">Henrique Kawakami</h5>
+                      <p class="presenter-credentials">Technical Director: KRYPTUS Solucoes em Seguranca da Informacao</p>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+                <div class="session-meta-info">
+                  <ul>
+                    <li><strong>Track:&nbsp;</strong>Design Sotware &amp; Services</li>
+                    <li><strong>Sub-Track:&nbsp;</strong>Embedded Design Techniques</li>
+                    <li><strong>Architectures:&nbsp;</strong>Software &amp; Tools</li>
+                    <li><strong>Session Level:&nbsp;</strong>Basic</li>
+                    <li><strong>Session Type:&nbsp;</strong>Hands-On Workshop</li>
+                    <li><strong>Design Cycle Phase:&nbsp;</strong>Define (Create Awareness, Identify Opportunities)</li>
+                    <li><strong>Language:&nbsp;</strong>Portugese</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.main -->
+
+      <footer id="footer_main">
+        <div id="footer_inner">
+          <nav class="social-nav">
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-linkedin"></span></a>
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-envelope"></span></a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+
+    <script>
+    // Treeview
+//    $("aside.treeview").jstree({
+//      "types" : {
+//        "default" : { "icon" : "glyphicon glyphicon-flash" },
+//        "demo" : { "icon" : "glyphicon glyphicon-ok" }
+//      },
+
+//    "plugins" : [ "types" ]
+//    });
+
+    // Arrow click to reveal Content
+    $(".right-col, .mid-col").click(function(){
+    //  $(".session-item").find(".content").addClass("hidden");
+    //  $(".session-item").find(".glyphicon-chevron-up").toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
+
+      $(this).parents(".session-item").find(".right-col .glyphicon").toggleClass("glyphicon-chevron-down glyphicon-chevron-up");
+      $(this).parents(".session-item").find(".content").toggleClass("hidden");
+    });
+
+    // Select favorite Star
+    $(".glyphicon-star.unselected").click(function(){
+      $(this).toggleClass("unselected selected");
+
+      $(this).parents(".session-item").find(".content").addClass("hidden");
+      $(this).parents(".session-item").find(".glyphicon-chevron-up").toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
+    });
+
+
+//    $(".left-nav li a").addClass("closed");
+    $(".left-nav li").has("ul").find("> a").addClass("item closed");
+    // Use Shown & Hidden for CSS transitions (as opposed to Show Hide)
+    // options are show/shown/hide/hidden.bs.collapse
+
+    // On Expand
+    $(".left-nav .item").click(function(){
+      $(".left-nav").on("shown.bs.collapse", function(){
+        // this code runs before the content is Shown
+      });
+      $(this).toggleClass("open closed");
+    });
+
+    // On Collapse
+    $(".left-nav").on("hidden.bs.collapse", function(){
+      // this code runs before the content is Hidden
+//      alert("Hidden!");
+    });
+    </script>
+  </body>
+</html>

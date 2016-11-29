@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Create New Demo | Details</title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col menu_fixed">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="examples/index.html" class="site_title">
+                <img id="nxp_logo" src="images/nxp_logo.png" alt="NXP Logo" /> <span>Event Tool</span>
+              </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Menu</h3>
+                <ul class="nav side-menu">
+                  <li>
+                    <a href="index.html"><i class="fa  fa-tachometer"></i> Dashboard</a>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-desktop"></i> Events <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="event-create-new.html">Create Event</a></li>
+                      <!--li><a href="manage-events.php">Manage Events</a></li-->
+                      <!--li><a href="javascript:void(0);">Archived Events</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-table"></i> Sessions <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="manage-sessions.php">Manage Sessions</a></li-->
+                      <li><a href="session-create-new-initial.html">Create New Session</a></li>
+                      <!--li><a href="import-sessions.php">Import Sessions</a></li-->
+                      <!--li><a href="javascript:void(0);">Archived Sessions</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa  fa-trophy"></i> Sponsors <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="manage-sponsors.php">Manage Sponsors</a></li-->
+                      <li><a href="sponsors-levels.html">Manage Levels</a></li>
+                      <!--li><a href="javascript:void(0);">Manage Pedestals</a></li-->
+                      <!--li><a href="javascript:void(0);">Archived Sponsors</a></li-->
+                    </ul>
+                  </li>
+                  <li class="active"><a href="javascript:void(0);"><i class="fa  fa-flask"></i> Demos <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="javascript:void(0);">Demos Dashboard</a></li-->
+                      <li><a href="demo-create-new-initial.html">Create New Demo</a></li>
+                      <!--li><a href="javascript:void(0);">FTF Demos</a></li-->
+                      <!--li><a href="javascript:void(0);">Tech Days Demo List</a></li-->
+                      <!--li><a href="javascript:void(0);">Status Report ??</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-bar-chart"></i> Reporting <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="javascript:void(0);">Reports Dashboard</a></li-->
+                      <!--li><a href="javascript:void(0);">Event Info</a></li-->
+                      <!--li><a href="javascript:void(0);">Session Info</a></li-->
+                      <!--li><a href="javascript:void(0);">Attendance Info</a></li-->
+                      <!--li><a href="javascript:void(0);">Common Reports</a></li-->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu_section">
+                <h3>Super Admin</h3>
+                <ul class="nav side-menu">
+                  <li><a href="javascript:void(0);"><i class="fa fa-edit"></i> Templates <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="javascript:void(0);">Templates Dashboard</a></li-->
+                      <!--li><a href="javascript:void(0);">Create New</a></li-->
+                      <!--li><a href="javascript:void(0);">Manage Templates</a></li-->
+                    </ul>
+                  </li>
+                  <li><a href="javascript:void(0);"><i class="fa  fa-users"></i> User Mgmt. <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <!--li><a href="javascript:void(0);">User Management Dashboard</a></li-->
+                      <!--li><a href="javascript:void(0);">Add User</a></li-->
+                      <!--li><a href="javascript:void(0);">Manage Users</a></li-->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu_section">
+                <h3>Third Party Area</h3>
+                <ul class="nav side-menu">
+                  <li><a href="javascript:void(0);"><i class="fa fa-edit"></i> Sponsors <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="third-party.html">Sponsor Main Page</a></li>
+                      <li><a href="third-party-edit-contact.html">Sponsor Edit Info</a></li>
+                      <li><a href="sponsor-application.html">Sponsor Application Form</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <!--div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div-->
+            <!-- /menu footer buttons -->
+          </div>
+
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li>Create Demo</li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">John Doe&nbsp;<span class="fa fa-angle-down"></span></a>
+
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Create New Demo</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="x_content">
+                    <!-- Smart Wizard -->
+                    <div id="wizard-container">
+                      <nav class="wizard">
+                        <a class="wizard-item active" href="#1" data-rel="step-1"><span class="glyphicon"></span> Basic Info</a>
+                        <a class="wizard-item" href="#2" data-rel="step-2"><span class="glyphicon glyphicon-adjust"></span> Additional Info</a>
+                        <a class="wizard-item" href="#3" data-rel="step-3"><span class="glyphicon"></span> Attendee Info</a>
+                        <a class="wizard-item" href="#4" data-rel="step-4"><span class="glyphicon"></span> Custom Fields</a>
+                      </nav>
+
+                      <!-- div needed for js to write content. Otherwise it adds a div with set height -->
+                      <div>
+                        <form>
+                          <div id="step-1" class="active">
+                            <fieldset>
+                              <div class="row">
+                                <h4 class="x_title">Global Information</h4>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-xs-12 col-lg-6">
+                                  <div class="form-group">
+                                    <label class="control-label" for="demo_title">Demo Title<span class="required">*</span></label>
+                                    <input type="text" id="demo_title" required="required" class="form-control">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label class="control-label" for="session_abstract">Session Abstract<span class="required">*</span></label>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                  </div>
+                                </div>
+
+                                <div class="col-xs-12 col-lg-6">
+                                  <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                      <div class="form-group">
+                                        <label class="control-label" for="demo_owner_first">Demo Owner First Name</label>
+                                        <input type="text" id="demo_owner_first" class="form-control">
+                                      </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6">
+                                      <div class="form-group">
+                                        <label class="control-label" for="demo_owner_last">Demo Owner Last Name</label>
+                                        <input type="text" id="demo_owner_last" class="form-control">
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label class="control-label" for="demo_email">Demo Owner Email Address</label>
+                                    <input type="text" id="demo_email" class="form-control">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label class="control-label" for="marcom_contact">Marcom Contact</label>
+                                    <select class="form-control" id="marcom_contact">
+                                      <option selected disabled>Marcom Contact</option>
+                                      <option>Ashley Snoey</option>
+                                      <option>Ali Stricklen</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                  <div class="form-group">
+                                    <label class="control-label" for="demo_track">Track</label>
+                                    <select class="form-control" id="demo_track">
+                                      <option selected disabled>Demo Track</option>
+                                      <option>Automotive</option>
+                                      <option>NFC</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6">
+                                  <div class="form-group">
+                                    <label class="control-label" for="demo_biz_unit">Business Unit Requesting Content</label>
+                                    <select class="form-control" id="demo_biz_unit">
+                                      <option selected disabled>Business Unit</option>
+                                      <option>Automotive</option>
+                                      <option>NFC</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+
+                          <div id="step-2">
+                            <fieldset>
+                              <!--legend>Event Info</legend-->
+                              <div class="row">
+                                <h4 class="x_title">Event Info</h4>
+                              </div>
+                            </fieldset>
+                            <!-- added inline style, needs to be addressed with stylesheet -->
+                            <table id="datatable" class="table row-border table-hover" style="width: 100%;">
+                              <thead>
+                                <tr>
+                                  <th>Event Title</th>
+                                  <th>Event Location</th>
+                                  <th>Start date</th>
+                                </tr>
+                              </thead>
+
+                              <tbody>
+                                <tr>
+                                  <td>NXP FTF Americas 2016</td>
+                                  <td>Austin, TX</td>
+                                  <td>2011/04/25</td>
+                                </tr>
+                                <tr>
+                                  <td>NXP FTF Japan 2016</td>
+                                  <td>Tokyo, Japan</td>
+                                  <td>2011/07/25</td>
+                                </tr>
+                                <tr>
+                                  <td>NXP Tech Days San Francisco</td>
+                                  <td>San Francisco, CA</td>
+                                  <td>2009/01/12</td>
+                                </tr>
+                                <tr>
+                                  <td>NXP Tech Days Edinburgh</td>
+                                  <td>Edinburgh, Scotland</td>
+                                  <td>2012/03/29</td>
+                                </tr>
+                                <tr>
+                                  <td>NXP Tech Days Tokyo</td>
+                                  <td>Tokyo, Japan</td>
+                                  <td>2008/11/28</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div id="step-3">
+                            <p><strong>Demo Title:</strong>&nbsp;Smart Sensing Systmes for Dry Powder Inhaler<br />
+                              <strong>Event Name:</strong>&nbsp;NXP FTF Americas 2016
+                            </p>
+                            <div class="row">
+                              <h4 class="x_title">Signage Type:</h4>
+                              <div class="col-xs-12">
+                                <p>
+                                  Please select a Signage Type (We reserve the right to review the graphic).
+                                </p>
+
+                                <p>
+                                  This information will be used to create your demo pedestal within the Technology Lab. When all of the information is complete and accurate, click the button at the end of the form to submit it for approval.
+                                </p>
+                              </div>
+                            </div>
+
+                            <fieldset>
+                              <div class="row">
+                                <div class="col-xs-6 col-sm-3">
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" value="signage" id="logo_text_graphic" name="signage"> Credit Card
+                                    </label>
+                                  </div>
+                                  <img class="img-responsive" src="http://placehold.it/300X500" alt="placeholder">
+                                </div>
+
+                                <div class="col-xs-6 col-sm-3">
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" value="signage" id="logo_text_graphic_1" name="signage"> Logo, Text and Graphic #1
+                                    </label>
+                                  </div>
+                                  <img class="img-responsive" src="http://placehold.it/300X500" alt="placeholder">
+                                </div>
+
+                                <div class="col-xs-6 col-sm-3">
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" value="signage" id="logo_text_graphic_2" name="signage"> Logo, Text and Graphic #2
+                                    </label>
+                                  </div>
+                                  <img class="img-responsive" src="http://placehold.it/300X500" alt="placeholder">
+                                </div>
+
+                                <div class="col-xs-6 col-sm-3">
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" value="signage" id="qr_code" name="signage"> QR Code
+                                    </label>
+                                  </div>
+                                  <img class="img-responsive" src="http://placehold.it/300X300" alt="placeholder">
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+
+                          <div id="step-4">
+                            <fieldset>
+                              <div class="row">
+                                <h4 class="x_title">Area Requirements</h4>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                  <div class="form-group">
+                                    <label class="control-label" for="demo_height">Height</label>
+                                    <input type="text" id="demo_height" class="form-control">
+                                  </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                  <div class="form-group">
+                                    <label class="control-label" for="demo_width">Width</label>
+                                    <input type="text" id="demo_width" class="form-control">
+                                  </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                  <div class="form-group">
+                                    <label class="control-label" for="demo_depth">Depth</label>
+                                    <input type="text" id="demo_depth" class="form-control">
+                                  </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6">
+                                  <div class="form-group">
+                                    <label class="control-label" for="demo_location">Demo Location</label>
+                                    <input type="text" id="demo_location" class="form-control">
+                                  </div>
+                                </div>
+                              </div>
+                            </fieldset>
+
+                            <fieldset>
+                              <div class="row">
+                                <h4 class="x_title">Wireless &amp; Equipment Requirements:</h4>
+                                <div class="col-xs-12">
+                                  <p>Please let us know if you require any of the following:</p>
+                                </div>
+                              </div>
+
+                              <div class="col-xs-12 col-sm-6">
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> LCD Monitor
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> Laptop
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> Keyboard
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> Mouse
+                                  </label>
+                                </div>
+                                <div class="checkbox conditional">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> Network Connection
+                                  </label>
+                                </div>
+                                <div class="checkbox well" id="network_conditional">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> Requires a Dedicated IP Address
+                                  </label>
+                                </div>
+
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> Wireless Connection
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> Wireless Broadcast
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="" name="equipment_requirements"> Wireless Concurrent Connection
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- End SmartWizard Content -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">NXP Event Tool</div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.js"></script>
+
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+
+    <!-- Datatables -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Datatables -->
+    <script>
+      $(document).ready(function() {
+        var handleDataTableButtons = function() {
+          if ($("#datatable-buttons").length) {
+            $("#datatable-buttons").DataTable({
+              dom: "Bfrtip",
+              buttons: [
+                {
+                  extend: "copy",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "csv",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "excel",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "pdfHtml5",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "print",
+                  className: "btn-sm"
+                },
+              ],
+              responsive: true
+            });
+          }
+        };
+
+        TableManageButtons = function() {
+          "use strict";
+          return {
+            init: function() {
+              handleDataTableButtons();
+            }
+          };
+        }();
+
+        $('#datatable').dataTable();
+        $('#datatable-keytable').DataTable({
+          keys: true
+        });
+
+        $('#datatable-responsive').DataTable();
+
+        $('#datatable-scroller').DataTable({
+          ajax: "js/datatables/json/scroller-demo.json",
+          deferRender: true,
+          scrollY: 380,
+          scrollCollapse: true,
+          scroller: true
+        });
+
+        var table = $('#datatable-fixed-header').DataTable({
+          fixedHeader: true
+        });
+
+        TableManageButtons.init();
+      });
+    </script>
+    <!-- /Datatables -->
+
+    <script>
+    $("#network_conditional").addClass("hidden");
+
+    $(".checkbox.conditional").click(function(){
+      $("#network_conditional").toggleClass("hidden");
+    });
+    </script>
+
+
+    <script>
+    // Makeshift Tab functionality for display purposes
+    // Active class for styling
+    $(".wizard-item").click(function(){
+    	$(".wizard-item").removeClass("active").find(".glyphicon-ok").removeClass("glyphicon-ok");
+    	$(this).addClass("active").find(".glyphicon").addClass("glyphicon-ok");;
+    });
+
+    // Display content on nav click
+    $("#wizard-container div[id*='step-']").hide();
+    $("#wizard-container div[id*='step-'].active").show();
+
+    $(".wizard-item").click(function (e) {
+    	var currentTab = $(this).attr("data-rel");
+
+    	$("#wizard-container div[id*='step-']").hide();
+    	$("#wizard-container div#" + currentTab).show();
+    });
+    </script>
+  </body>
+</html>
