@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
+    <!--meta http-equiv="session-item-content-Type" session-item-content="text/html; charset=UTF-8"-->
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" session-item-content="IE=edge">
+    <meta name="viewport" session-item-content="width=device-width, initial-scale=1">
 
-    <title>Content Explorer</title>
+    <title>session-item-content Explorer</title>
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
 
-  <body class="third-party">
+  <body class="third-party content-explorer">
     <div class="container body">
       <div class="top_nav">
         <div class="nav_menu">
@@ -51,7 +51,7 @@
       </div>
 
       <div id="main">
-        <h1 class="event-name">NXP FTF Technology Forum Austin, US 2016 - Content Explorer</h1>
+        <h1 class="event-name">NXP FTF Technology Forum Austin, US 2016 - session-item-content Explorer</h1>
 
         <div class="row">
           <div class="col-xs-12 col-sm-3">
@@ -142,14 +142,14 @@
 
           <!-- Session List -->
           <div class="col-xs-12 col-sm-9">
-            <header>
-              <a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
-              <h2>Friday October 15, 2016</h2>
+            <header class="session-list-header">
+              <a href="#" class="session-list-toggle"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <h2 class="session-list-date">Friday October 15, 2016</h2>
               <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
-            </header>
+            </header class="session-list-header">
 
             <div class="hour-marker">
-              <h4>11:00 am</h4>
+              <h4 class="hour-marker-title" class="hour-marker-title">11:00 am</h4>
             </div>
 
             <!-- First Item -->
@@ -189,7 +189,7 @@
               <div class="right-col">
                 <span class="glyphicon glyphicon-chevron-down"></span>
               </div>
-              <div class="content hidden">
+              <div class="session-item-content hidden">
                 <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
               </div>
             </div>
@@ -231,7 +231,7 @@
               <div class="right-col">
                 <span class="glyphicon glyphicon-chevron-down"></span>
               </div>
-              <div class="content hidden">
+              <div class="session-item-content hidden">
                 <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
               </div>
             </div>
@@ -273,12 +273,12 @@
               <div class="right-col">
                 <span class="glyphicon glyphicon-chevron-down"></span>
               </div>
-              <div class="content hidden">
+              <div class="session-item-content hidden">
                 <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
               </div>
             </div>
             <div class="hour-marker">
-              <h4>12:00 pm</h4>
+              <h4 class="hour-marker-title" class="hour-marker-title">12:00 pm</h4>
               <span class="line-marker"></span>
             </div>
             <!-- First Item -->
@@ -318,7 +318,7 @@
               <div class="right-col">
                 <span class="glyphicon glyphicon-chevron-down"></span>
               </div>
-              <div class="content hidden">
+              <div class="session-item-content hidden">
                 <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
               </div>
             </div>
@@ -360,7 +360,7 @@
               <div class="right-col">
                 <span class="glyphicon glyphicon-chevron-down"></span>
               </div>
-              <div class="content hidden">
+              <div class="session-item-content hidden">
                 <div class="row">
                   <div class="col-xs-12">
                     <p>In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
@@ -440,7 +440,7 @@
               <div class="right-col">
                 <span class="glyphicon glyphicon-chevron-down"></span>
               </div>
-              <div class="content hidden">
+              <div class="session-item-content hidden">
                 <p class="description">In this panel session, join an informative discussion with Embedded Linux specialists Sergio and Fábio, aimed to people entering the Linux world. Some of the topics covered will include: Does Linux means complexity or flexibility? How Embedded Linux can put you in contact with a large community of developers and ready-solutions? How it reduces your software time-to-market? Please bring your questions and comments to the discussion.</p>
 
                 <div class="presenter-info-container">
@@ -530,20 +530,20 @@
 //    "plugins" : [ "types" ]
 //    });
 
-    // Arrow click to reveal Content
+    // Arrow click to reveal session-item-content
     $(".right-col, .mid-col").click(function(){
-    //  $(".session-item").find(".content").addClass("hidden");
+    //  $(".session-item").find(".session-item-content").addClass("hidden");
     //  $(".session-item").find(".glyphicon-chevron-up").toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
 
       $(this).parents(".session-item").find(".right-col .glyphicon").toggleClass("glyphicon-chevron-down glyphicon-chevron-up");
-      $(this).parents(".session-item").find(".content").toggleClass("hidden");
+      $(this).parents(".session-item").find(".session-item-content").toggleClass("hidden");
     });
 
     // Select favorite Star
     $(".glyphicon-star.unselected").click(function(){
       $(this).toggleClass("unselected selected");
 
-      $(this).parents(".session-item").find(".content").addClass("hidden");
+      $(this).parents(".session-item").find(".session-item-content").addClass("hidden");
       $(this).parents(".session-item").find(".glyphicon-chevron-up").toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
     });
 
@@ -556,14 +556,14 @@
     // On Expand
     $(".left-nav .item").click(function(){
       $(".left-nav").on("shown.bs.collapse", function(){
-        // this code runs before the content is Shown
+        // this code runs before the session-item-content is Shown
       });
       $(this).toggleClass("open closed");
     });
 
     // On Collapse
     $(".left-nav").on("hidden.bs.collapse", function(){
-      // this code runs before the content is Hidden
+      // this code runs before the session-item-content is Hidden
 //      alert("Hidden!");
     });
     </script>

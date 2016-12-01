@@ -4803,42 +4803,38 @@ ul.notifications {
 
 /* end _third-party.scss */
 /* start _content-explorer.scss */
-.row {
+.content-explorer .row {
   width: 100%; }
-
-.img-responsive {
+.content-explorer .img-responsive {
   margin-right: 1em; }
-
-aside {
+.content-explorer aside {
   margin-top: 2em; }
-
-.left-nav {
+.content-explorer .left-nav {
   padding: 0;
   margin-left: .5em;
   list-style: none; }
-  .left-nav-title {
+  .content-explorer .left-nav-title {
     font-size: 1em;
     font-weight: 700;
     margin: 0;
     line-height: 1.5em; }
-  .left-nav .item {
+  .content-explorer .left-nav .item {
     position: relative; }
-    .left-nav .item:after {
+    .content-explorer .left-nav .item:after {
       position: relative;
       display: inline-block;
       margin-left: 5px;
       font-family: "Glyphicons Halflings";
       font-size: .75em;
       vertical-align: bottom; }
-    .left-nav .item.open:after {
+    .content-explorer .left-nav .item.open:after {
       content: ""; }
-    .left-nav .item.closed:after {
+    .content-explorer .left-nav .item.closed:after {
       content: ""; }
-  .left-nav ul {
+  .content-explorer .left-nav ul {
     list-style: none;
     padding-left: .75em; }
-
-header {
+.content-explorer .session-list-header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4852,33 +4848,31 @@ header {
   margin: 0 auto;
   background: #ffffff;
   z-index: 99; }
-  header h2 {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 200px;
-        -ms-flex: 1 0 200px;
-            flex: 1 0 200px;
-    margin: 0 auto;
-    color: #000000;
-    text-align: center; }
-  header a {
-    color: #000000; }
-    header a:hover, header a:active {
-      color: #595959; }
-
-.main {
+.content-explorer .session-list-date {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 200px;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+  margin: 0 auto;
+  color: #000000;
+  text-align: center; }
+.content-explorer .session-list-toggle {
+  color: #000000; }
+  .content-explorer .session-list-toggle:hover, .content-explorer .session-list-toggle:active {
+    color: #595959; }
+.content-explorer .main {
   width: 100%;
   padding: 0 20px;
   margin: 1em auto; }
-
-.hour-marker {
+.content-explorer .hour-marker {
   position: relative;
   padding: 1em 1em 1em 55px;
   color: #000000;
   background: #f2f2f2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
-  .hour-marker h4 {
+  .content-explorer .hour-marker-title {
     position: relative; }
-    .hour-marker h4:before, .hour-marker h4:after {
+    .content-explorer .hour-marker-title:before, .content-explorer .hour-marker-title:after {
       content: "";
       position: absolute;
       top: 50%;
@@ -4887,16 +4881,15 @@ header {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
-    .hour-marker h4:before {
+    .content-explorer .hour-marker-title:before {
       width: calc(100% - 100px);
       height: 2px; }
-    .hour-marker h4:after {
+    .content-explorer .hour-marker-title:after {
       top: 50%;
       width: 10px;
       height: 10px;
       border-radius: 50%; }
-
-.session-item {
+.content-explorer .session-item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4909,7 +4902,7 @@ header {
   font-weight: 300;
   background: #fafafa;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
-  .session-item > .left-col, .session-item .right-col {
+  .content-explorer .session-item > .left-col, .content-explorer .session-item .right-col {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 30px;
         -ms-flex: 0 0 30px;
@@ -4926,45 +4919,41 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .session-item > .mid-col {
+  .content-explorer .session-item > .mid-col {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 30px;
         -ms-flex: 1 0 30px;
             flex: 1 0 30px;
     padding: 0 1em; }
-
-.glyphicon-star {
+.content-explorer .glyphicon-star {
   padding: .25em;
   font-size: 1em;
   text-align: center;
   line-height: 1;
   border: 1px solid #f9b500;
   border-radius: 50%; }
-  .glyphicon-star.unselected {
+  .content-explorer .glyphicon-star.unselected {
     color: #B5B2B1;
     background: transparent; }
-  .glyphicon-star.selected {
+  .content-explorer .glyphicon-star.selected {
     color: #fafafa;
     background: #f9b500; }
-
-.session-item-info {
+.content-explorer .session-item-info {
   padding: 0;
   list-style: none;
   margin: 0; }
-  .session-item-info.meta {
+  .content-explorer .session-item-info.meta {
     color: #B5B2B1; }
-  .session-item-info.session-meta {
+  .content-explorer .session-item-info.session-meta {
     font-style: italic; }
-  .session-item-info > li {
+  .content-explorer .session-item-info > li {
     display: inline-block;
     padding-right: .5em; }
-
-.session-title > li {
+.content-explorer .session-title > li {
   margin: .25em 0;
   font-size: 16px;
   font-weight: 700; }
-
-.content {
+.content-explorer .session-item-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4984,15 +4973,14 @@ header {
   padding-top: 1em;
   margin: 1em calc(1em + 30px);
   border-top: 1px solid #000000; }
-  .content .description {
+  .content-explorer .session-item-content .description {
     margin-bottom: 1em; }
-
-.presenter-info-container {
+.content-explorer .presenter-info-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .presenter-info-container .presenter-container, .presenter-info-container .co-presenter-container {
+  .content-explorer .presenter-info-container .presenter-container, .content-explorer .presenter-info-container .co-presenter-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5006,7 +4994,7 @@ header {
             justify-content: flex-end;
     width: calc(100% - 160px);
     width: 100%; }
-    .presenter-info-container .presenter-container .presenter, .presenter-info-container .co-presenter-container .presenter {
+    .content-explorer .presenter-info-container .presenter-container .presenter, .content-explorer .presenter-info-container .co-presenter-container .presenter {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 40%;
           -ms-flex: 1 0 40%;
@@ -5024,54 +5012,52 @@ header {
               align-items: flex-start;
       padding-right: 20px;
       margin-bottom: 1.5em; }
-      .presenter-info-container .presenter-container .presenter.co-presenter, .presenter-info-container .co-presenter-container .presenter.co-presenter {
+      .content-explorer .presenter-info-container .presenter-container .presenter.co-presenter, .content-explorer .presenter-info-container .co-presenter-container .presenter.co-presenter {
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 40%;
             -ms-flex: 0 0 40%;
                 flex: 0 0 40%; }
-    .presenter-info-container .presenter-container .glyphicon-user, .presenter-info-container .co-presenter-container .glyphicon-user {
+    .content-explorer .presenter-info-container .presenter-container .glyphicon-user, .content-explorer .presenter-info-container .co-presenter-container .glyphicon-user {
       font-size: 2em;
       padding: .5em .25em 0;
       margin-right: .5em;
       background: #B5B2B1; }
-    .presenter-info-container .presenter-container .presenter-info, .presenter-info-container .co-presenter-container .presenter-info {
+    .content-explorer .presenter-info-container .presenter-container .presenter-info, .content-explorer .presenter-info-container .co-presenter-container .presenter-info {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 30px;
           -ms-flex: 1 0 30px;
               flex: 1 0 30px;
       margin-bottom: 1em; }
-      .presenter-info-container .presenter-container .presenter-info .presenter-lead, .presenter-info-container .co-presenter-container .presenter-info .presenter-lead {
+      .content-explorer .presenter-info-container .presenter-container .presenter-info .presenter-lead, .content-explorer .presenter-info-container .co-presenter-container .presenter-info .presenter-lead {
         margin: 0; }
-      .presenter-info-container .presenter-container .presenter-info .presenter-title, .presenter-info-container .co-presenter-container .presenter-info .presenter-title {
+      .content-explorer .presenter-info-container .presenter-container .presenter-info .presenter-title, .content-explorer .presenter-info-container .co-presenter-container .presenter-info .presenter-title {
         margin: 0 0 .125em; }
-      .presenter-info-container .presenter-container .presenter-info .presenter-credentials, .presenter-info-container .co-presenter-container .presenter-info .presenter-credentials {
+      .content-explorer .presenter-info-container .presenter-container .presenter-info .presenter-credentials, .content-explorer .presenter-info-container .co-presenter-container .presenter-info .presenter-credentials {
         margin: 0;
         font-style: italic;
         line-height: 1.125; }
-    .presenter-info-container .presenter-container .presenter-bio, .presenter-info-container .co-presenter-container .presenter-bio {
+    .content-explorer .presenter-info-container .presenter-container .presenter-bio, .content-explorer .presenter-info-container .co-presenter-container .presenter-bio {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 100%;
           -ms-flex: 1 0 100%;
               flex: 1 0 100%; }
-
-.co-presenter {
+.content-explorer .co-presenter {
   -webkit-box-flex: 1 !important;
   -webkit-flex: 1 0 100% !important;
       -ms-flex: 1 0 100% !important;
           flex: 1 0 100% !important; }
-
-.session-meta-info {
+.content-explorer .session-meta-info {
   width: 100%;
   margin: 1.5em 0 0;
   font-size: .85em; }
-  .session-meta-info ul {
+  .content-explorer .session-meta-info ul {
     padding: 0;
     margin: 0;
     list-style: none; }
-    .session-meta-info ul li {
+    .content-explorer .session-meta-info ul li {
       display: inline-block;
       padding-right: .5em; }
-      .session-meta-info ul li:last-of-type {
+      .content-explorer .session-meta-info ul li:last-of-type {
         padding: 0; }
 
 /* end _content-explorer.scss */
