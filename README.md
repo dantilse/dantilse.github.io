@@ -1,3 +1,3 @@
-# Dantilse
+# Personal Site for Dan Ilse
 
-Remove old code in preparation for building a GatsbyJS site to Github Pages.
+Built using Gatsby and ReactJS.
